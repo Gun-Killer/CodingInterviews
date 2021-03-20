@@ -25,15 +25,14 @@ namespace ForYou.CodingInterviews.LeeCode.Offer06
 
             var res = new int[count];
             next = head;
-            count = 0;
+
             do
             {
+                count--;
                 res[count] = next.val;
-                count++;
                 next = next.next;
             } while (next != null);
 
-            Array.Reverse(res);
             return res;
         }
     }
