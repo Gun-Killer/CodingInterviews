@@ -58,12 +58,12 @@ namespace ForYou.CodingInterviews.LeeCode.Offer12
                 return true;
             }
             index++;
-            var mid=board[row][column];
-            board[row][column] = '~';
-            var res= Find(row - 1, column, board, index, word)
+            var mid = board[row][column];
+            board[row][column] = '~';//此次会导致cpu 缓存无法使用
+            var res = Find(row - 1, column, board, index, word)
                 || Find(row, column - 1, board, index, word)
                 || Find(row + 1, column, board, index, word)
-                || Find(row, column +1, board, index, word);
+                || Find(row, column + 1, board, index, word);
             board[row][column] = mid;
             return res;
         }
