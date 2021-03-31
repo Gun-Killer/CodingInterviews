@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.LeeCode", "ForYou.CodingInterviews.LeeCode\ForYou.CodingInterviews.LeeCode.csproj", "{551717F9-134A-441F-9E35-4C65E7AD393B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.LeeCodeTest", "..\ForYou.CodingInterviews.LeeCodeTest\ForYou.CodingInterviews.LeeCodeTest.csproj", "{BE912E7D-0D78-4C43-867C-F2D51F6EFC5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.LeeCodeTest", "..\ForYou.CodingInterviews.LeeCodeTest\ForYou.CodingInterviews.LeeCodeTest.csproj", "{BE912E7D-0D78-4C43-867C-F2D51F6EFC5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{338AA266-6972-48AD-847A-117DBBE578E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.WPF", "WPF\ForYou.CodingInterviews.WPF\ForYou.CodingInterviews.WPF.csproj", "{E2022117-46F7-4673-B07B-BD4D3913CEF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,16 @@ Global
 		{BE912E7D-0D78-4C43-867C-F2D51F6EFC5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE912E7D-0D78-4C43-867C-F2D51F6EFC5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE912E7D-0D78-4C43-867C-F2D51F6EFC5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2022117-46F7-4673-B07B-BD4D3913CEF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2022117-46F7-4673-B07B-BD4D3913CEF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2022117-46F7-4673-B07B-BD4D3913CEF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2022117-46F7-4673-B07B-BD4D3913CEF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E2022117-46F7-4673-B07B-BD4D3913CEF7} = {338AA266-6972-48AD-847A-117DBBE578E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A27EAF7D-BA4C-47B7-B9ED-8E31D9E99FEA}
