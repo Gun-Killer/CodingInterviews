@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,5 +26,20 @@ namespace ForYou.CodingInterviews.WPF
         {
             InitializeComponent();
         }
+    }
+
+    public class TestTypeConverter : TypeConverter
+    {
+        public override object ConvertFrom(ITypeDescriptorContext context, CultureInfo culture, object value)
+        {
+            return base.ConvertFrom(context, culture, value);
+        }
+
+        public string Name { get; set; }
+    }
+
+    public class TestClass
+    {
+        public string X { get; set; }
     }
 }
