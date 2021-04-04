@@ -1,0 +1,24 @@
+﻿<Window x:Class="ForYou.CodingIntereviews.WPFLayout.WindowBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ForYou.CodingIntereviews.WPFLayout"
+        mc:Ignorable="d"
+        Title="WindowBinding" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Slider x:Name="slider" Height="20"></Slider>
+            <TextBox Width="auto" Height="20" Text="{Binding ElementName=slider,Path=Value}" Margin="10"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="0 10 0 0" Grid.Row="1">
+            <Button x:Name="btn01" Height="20" Width="100" Click="btn01_Click"></Button>
+            <TextBox Height="20" Name="tb01" Text="{Binding Name,Mode=TwoWay}"></TextBox>
+        </StackPanel>
+    </Grid>
+</Window>

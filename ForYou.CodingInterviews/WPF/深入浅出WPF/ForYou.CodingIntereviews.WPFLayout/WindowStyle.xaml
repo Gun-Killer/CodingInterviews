@@ -33,6 +33,8 @@
                 </MultiTrigger>
             </Style.Triggers>
         </Style>
+        <ControlTemplate x:Key="temp"></ControlTemplate>
+        <DataTemplate x:Key="datatTemp"></DataTemplate>
     </Window.Resources>
     <Grid>
         <StackPanel>
@@ -40,6 +42,19 @@
             <Button Style="{StaticResource btnStype}"></Button>
             <Button Height="20" Width="300" Style="{StaticResource MulTrigger}"></Button>
         </StackPanel>
+        <DataGrid>
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
 
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <UserControl ContentTemplate="{StaticResource datatTemp}">
+           
+        </UserControl>
     </Grid>
 </Window>
