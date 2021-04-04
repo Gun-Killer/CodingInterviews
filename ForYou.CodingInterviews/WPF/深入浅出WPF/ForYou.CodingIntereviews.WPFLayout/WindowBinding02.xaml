@@ -1,0 +1,36 @@
+﻿<Window x:Class="ForYou.CodingIntereviews.WPFLayout.WindowBinding02"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ForYou.CodingIntereviews.WPFLayout"
+        mc:Ignorable="d"
+        Title="WindowBinding02" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <WrapPanel>
+            <TextBox Name="tb001" Height="20" Width="50" Text="{Binding AgeText}"></TextBox>
+            <TextBox Name="tb002" Height="20" Width="50" Margin="10 0 0 0" Text="{Binding NameText}"></TextBox>
+            <Button Name="btn001" Command="{Binding Add}" Width="100" Margin="10 0 0 0">点击</Button>
+        </WrapPanel>
+        <DataGrid Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" Name="personGrid" ItemsSource="{Binding GridList}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="年龄" Binding="{Binding Age}"></DataGridTextColumn>
+                <DataGridTextColumn Header="名称" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Button>删除</Button>
+                                <Button>编辑</Button>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
