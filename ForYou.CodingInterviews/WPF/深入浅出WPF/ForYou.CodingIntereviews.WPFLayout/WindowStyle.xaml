@@ -13,12 +13,32 @@
         <Style x:Key="btnStype" TargetType="Button" BasedOn="{StaticResource baseBtnStype}">
             <Setter Property="Background" Value="Aqua"/>
             <Setter Property="Height" Value="20"></Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Content" Value="11"></Setter>
+                </Trigger>
+                <Trigger Property="IsMouseOver" Value="False">
+                    <Setter Property="Content" Value=""></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="MulTrigger" TargetType="Button">
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsMouseOver" Value="true"></Condition>
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Content" Value="触发了"></Setter>
+                </MultiTrigger>
+            </Style.Triggers>
         </Style>
     </Window.Resources>
     <Grid>
         <StackPanel>
             <Button Style="{StaticResource btnStype}"></Button>
             <Button Style="{StaticResource btnStype}"></Button>
+            <Button Height="20" Width="300" Style="{StaticResource MulTrigger}"></Button>
         </StackPanel>
 
     </Grid>
