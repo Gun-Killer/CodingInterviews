@@ -41,5 +41,18 @@ namespace ForYou.CodingInterviews.WPF
     public class TestClass
     {
         public string X { get; set; }
+
+        private string _age;
+
+        public string Age
+        {
+            get { return _age; }
+            set
+            {
+                _age = value;
+
+            }
+        }
+
     }
 }
