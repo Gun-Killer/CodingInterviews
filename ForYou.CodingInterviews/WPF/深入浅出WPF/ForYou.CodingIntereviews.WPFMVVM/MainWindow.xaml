@@ -6,7 +6,21 @@
         xmlns:local="clr-namespace:ForYou.CodingIntereviews.WPFMVVM"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <Style x:Key="tb01" TargetType="TextBox">
+            <Setter Property="Height" Value="20"></Setter>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Margin" Value="10"/>
+        </Style>
+        <Style TargetType="TextBox" x:Key="tb02" BasedOn="{StaticResource tb01}">
+            
+        </Style>
+    </Window.Resources>
     <Grid>
-
+        <StackPanel>
+            <TextBox Style="{StaticResource tb02}">
+                
+            </TextBox>
+        </StackPanel>
     </Grid>
 </Window>
