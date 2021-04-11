@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:ForYou.CodingIntereviews.WPFToDo"
+        xmlns:local="clr-namespace:ForYou.CodingIntereviews.WPFToDo" xmlns:local1="clr-namespace:ForYou.CodingIntereviews.WPFToDo.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
@@ -21,19 +21,28 @@
                             <Trigger Property="IsMouseOver" Value="True">
                                 <Setter Property="Background" Value="#F4F4F4" TargetName="back_"></Setter>
                             </Trigger>
+
                             <Trigger Property="IsChecked" Value="True">
                                 <Setter Property="FontWeight" Value="Bold"></Setter>
                                 <Setter Property="Foreground" Value="Red"></Setter>
                                 <Setter Property="BorderThickness" Value="1 0 0 0" TargetName="bb"></Setter>
                                 <Setter Property="BorderBrush" Value="Red" TargetName="bb"/>
                             </Trigger>
+
+                           
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
             <Setter Property="Margin" Value="0 10 0 0"></Setter>
+            
         </Style>
+
+
     </Window.Resources>
+    <Window.DataContext>
+        <local1:MenuItemViewModel/>
+    </Window.DataContext>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*" MinWidth="200" MaxWidth="300"></ColumnDefinition>
@@ -41,12 +50,12 @@
         </Grid.ColumnDefinitions>
         <StackPanel>
             <TextBlock Margin="10 10 0 0" VerticalAlignment="Center" HorizontalAlignment="Left">Microsoft ToDo</TextBlock>
-            <DockPanel LastChildFill="False">
+            <DockPanel LastChildFill="False" VerticalAlignment="Center">
                 <Image DockPanel.Dock="Left" Width="40" Height="40" Source="C:\Users\GunKiller\Pictures\Saved Pictures\ce10818cef2696f7445bd0673c51d1ba.png" Margin="10 10 0 0"></Image>
                 <TextBlock  DockPanel.Dock="Left"  Margin="10 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="15">Killer</TextBlock>
                 <Image  DockPanel.Dock="Right"  Width="40" Height="40" Source="C:\Users\GunKiller\Pictures\Saved Pictures\ce10818cef2696f7445bd0673c51d1ba.png" Margin="10 10 0 0"></Image>
             </DockPanel>
-            <ListBox Margin="10 10 0 0" x:Name="tb01" HorizontalContentAlignment="Stretch" BorderBrush="White">
+            <ListBox Margin="10 10 0 0" x:Name="tb01" HorizontalContentAlignment="Stretch" BorderBrush="White"  ItemsSource="{Binding Items}">
                 <ListBox.ItemContainerStyle>
                     <Style TargetType="ListBoxItem">
                         <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
@@ -59,34 +68,19 @@
                         </Setter>
                     </Style>
                 </ListBox.ItemContainerStyle>
-                <RadioButton   >
-                    <DockPanel LastChildFill="False"  Margin="10 00 0 0">
-                        <TextBlock DockPanel.Dock="Left">图标</TextBlock>
-                        <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="10 00 0 0">我的一天</TextBlock>
-                        <TextBlock DockPanel.Dock="Right" Margin="10 0 00 0" VerticalAlignment="Center">1</TextBlock>
-                    </DockPanel>
-                </RadioButton>
-                <RadioButton    >
-                    <DockPanel LastChildFill="False"  Margin="10 00 0 0">
-                        <TextBlock DockPanel.Dock="Left">图标</TextBlock>
-                        <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="10 00 0 0">重要</TextBlock>
-                        <TextBlock DockPanel.Dock="Right" Margin="10 0 00 0" VerticalAlignment="Center">1</TextBlock>
-                    </DockPanel>
-                </RadioButton>
-                <RadioButton   >
-                    <DockPanel LastChildFill="False"  Margin="10 00 0 0">
-                        <TextBlock DockPanel.Dock="Left">图标</TextBlock>
-                        <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="10 00 0 0">已计划日程</TextBlock>
-                        <TextBlock DockPanel.Dock="Right" Margin="10 0 00 0" VerticalAlignment="Center">1</TextBlock>
-                    </DockPanel>
-                </RadioButton>
-                <RadioButton   >
-                    <DockPanel LastChildFill="False"  Margin="10 00 0 0">
-                        <TextBlock DockPanel.Dock="Left">图标</TextBlock>
-                        <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="10 00 0 0">已分配给你</TextBlock>
-                        <TextBlock DockPanel.Dock="Right" Margin="10 0 00 0" VerticalAlignment="Center">1</TextBlock>
-                    </DockPanel>
-                </RadioButton>
+
+                <ListBox.ItemTemplate >
+                    <DataTemplate>
+                        <RadioButton GroupName="menu">
+                            <DockPanel LastChildFill="False"  Margin="10 00 0 0">
+                                <TextBlock DockPanel.Dock="Left" Text="{Binding Icon}"></TextBlock>
+                                <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="10 00 0 0" Text="{Binding Name}"></TextBlock>
+                                <TextBlock DockPanel.Dock="Right" Margin="10 0 00 0" VerticalAlignment="Center" Text="{Binding Count}"></TextBlock>
+                            </DockPanel>
+                        </RadioButton>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+
             </ListBox>
         </StackPanel>
         <StackPanel Grid.Column="1" Background="#22775C">
