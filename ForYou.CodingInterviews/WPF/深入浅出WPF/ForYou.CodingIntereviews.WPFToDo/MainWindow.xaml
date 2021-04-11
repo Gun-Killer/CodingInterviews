@@ -11,11 +11,27 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="RadioButton">
-                        <ContentPresenter></ContentPresenter>
+                        <Grid>
+                            <Border x:Name="back_"></Border>
+                            <Border x:Name="bb"  ></Border>
+                            <ContentPresenter>
+                            </ContentPresenter>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#F4F4F4" TargetName="back_"></Setter>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="FontWeight" Value="Bold"></Setter>
+                                <Setter Property="Foreground" Value="Red"></Setter>
+                                <Setter Property="BorderThickness" Value="1 0 0 0" TargetName="bb"></Setter>
+                                <Setter Property="BorderBrush" Value="Red" TargetName="bb"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
-            <Setter Property="Margin" Value="0 10 0 0"></Setter> 
+            <Setter Property="Margin" Value="0 10 0 0"></Setter>
         </Style>
     </Window.Resources>
     <Grid>
@@ -31,29 +47,41 @@
                 <Image  DockPanel.Dock="Right"  Width="40" Height="40" Source="C:\Users\GunKiller\Pictures\Saved Pictures\ce10818cef2696f7445bd0673c51d1ba.png" Margin="10 10 0 0"></Image>
             </DockPanel>
             <ListBox Margin="10 10 0 0" x:Name="tb01" HorizontalContentAlignment="Stretch" BorderBrush="White">
-                <RadioButton  HorizontalContentAlignment="Stretch" >
-                    <DockPanel LastChildFill="False" >
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="Template">
+                            <Setter.Value>
+                                <ControlTemplate TargetType="ListBoxItem">
+                                    <ContentPresenter></ContentPresenter>
+                                </ControlTemplate>
+                            </Setter.Value>
+                        </Setter>
+                    </Style>
+                </ListBox.ItemContainerStyle>
+                <RadioButton   >
+                    <DockPanel LastChildFill="False"  Margin="10 00 0 0">
                         <TextBlock DockPanel.Dock="Left">图标</TextBlock>
                         <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="10 00 0 0">我的一天</TextBlock>
                         <TextBlock DockPanel.Dock="Right" Margin="10 0 00 0" VerticalAlignment="Center">1</TextBlock>
                     </DockPanel>
                 </RadioButton>
-                <RadioButton  HorizontalContentAlignment="Stretch" >
-                    <DockPanel LastChildFill="False" >
+                <RadioButton    >
+                    <DockPanel LastChildFill="False"  Margin="10 00 0 0">
                         <TextBlock DockPanel.Dock="Left">图标</TextBlock>
                         <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="10 00 0 0">重要</TextBlock>
                         <TextBlock DockPanel.Dock="Right" Margin="10 0 00 0" VerticalAlignment="Center">1</TextBlock>
                     </DockPanel>
                 </RadioButton>
-                <RadioButton  HorizontalContentAlignment="Stretch" >
-                    <DockPanel LastChildFill="False" >
+                <RadioButton   >
+                    <DockPanel LastChildFill="False"  Margin="10 00 0 0">
                         <TextBlock DockPanel.Dock="Left">图标</TextBlock>
                         <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="10 00 0 0">已计划日程</TextBlock>
                         <TextBlock DockPanel.Dock="Right" Margin="10 0 00 0" VerticalAlignment="Center">1</TextBlock>
                     </DockPanel>
                 </RadioButton>
-                <RadioButton  HorizontalContentAlignment="Stretch" >
-                    <DockPanel LastChildFill="False" >
+                <RadioButton   >
+                    <DockPanel LastChildFill="False"  Margin="10 00 0 0">
                         <TextBlock DockPanel.Dock="Left">图标</TextBlock>
                         <TextBlock DockPanel.Dock="Left" VerticalAlignment="Center" Margin="10 00 0 0">已分配给你</TextBlock>
                         <TextBlock DockPanel.Dock="Right" Margin="10 0 00 0" VerticalAlignment="Center">1</TextBlock>
@@ -62,7 +90,7 @@
             </ListBox>
         </StackPanel>
         <StackPanel Grid.Column="1" Background="#22775C">
-             
+
         </StackPanel>
     </Grid>
 </Window>
