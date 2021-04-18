@@ -18,5 +18,11 @@
     <ClCompile Include="HellowWorld.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="AssignmentOperator.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IfStudent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

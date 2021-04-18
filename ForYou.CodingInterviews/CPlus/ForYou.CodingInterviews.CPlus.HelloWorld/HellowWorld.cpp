@@ -6,7 +6,7 @@ using namespace std;
 
 //单行注释
 /*多行注释*/
-int main() {
+int main1() {
 
 	//定义变量
 	int num = 10;
@@ -59,6 +59,11 @@ int main() {
 	cin >> input_p;
 
 	cout << input_p << endl;
+
+
+	int a = 10;
+	cout << a++ << endl;
+	cout << ++a << endl;
 
 	return 0;
 }
