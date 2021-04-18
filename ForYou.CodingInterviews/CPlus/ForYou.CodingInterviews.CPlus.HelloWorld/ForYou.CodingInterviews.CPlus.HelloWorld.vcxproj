@@ -143,6 +143,7 @@
     <ClCompile Include="AssignmentOperator.cpp" />
     <ClCompile Include="HellowWorld.cpp" />
     <ClCompile Include="IfStudent.cpp" />
+    <ClCompile Include="method_student.cpp" />
     <ClCompile Include="multiplication_table.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

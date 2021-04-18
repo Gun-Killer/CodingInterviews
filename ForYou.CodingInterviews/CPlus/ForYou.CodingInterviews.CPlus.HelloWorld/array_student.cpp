@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int main5()
 {
 	int nums[5];
 
