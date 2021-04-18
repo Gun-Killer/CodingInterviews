@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="array_student.cpp" />
     <ClCompile Include="AssignmentOperator.cpp" />
     <ClCompile Include="HellowWorld.cpp" />
     <ClCompile Include="IfStudent.cpp" />
