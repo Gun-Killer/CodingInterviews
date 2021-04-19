@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int main7()
 {
 	cout << max(1, 3) << endl;
 
