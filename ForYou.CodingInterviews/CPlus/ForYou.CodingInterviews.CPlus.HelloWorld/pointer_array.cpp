@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int main10()
 {
 	int arr[] = { 10,1,2,5,41 };
 	int* p_arr = arr;

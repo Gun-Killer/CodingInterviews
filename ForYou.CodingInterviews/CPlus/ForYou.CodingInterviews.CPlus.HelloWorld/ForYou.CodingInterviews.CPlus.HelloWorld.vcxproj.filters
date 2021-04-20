@@ -48,9 +48,18 @@
     <ClCompile Include="pointer_array.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="pointer_swap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="pointer_method.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="math_head.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="pointer_swap.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

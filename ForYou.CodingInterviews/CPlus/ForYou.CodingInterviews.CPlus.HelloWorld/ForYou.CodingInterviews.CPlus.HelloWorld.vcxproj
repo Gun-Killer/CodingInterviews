@@ -149,10 +149,13 @@
     <ClCompile Include="method_student.cpp" />
     <ClCompile Include="multiplication_table.cpp" />
     <ClCompile Include="pointer_array.cpp" />
+    <ClCompile Include="pointer_method.cpp" />
     <ClCompile Include="pointer_student.cpp" />
+    <ClCompile Include="pointer_swap.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="math_head.h" />
+    <ClInclude Include="pointer_swap.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
