@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int main9()
 {
 	int num = 20;
 	int* p_num = &num;

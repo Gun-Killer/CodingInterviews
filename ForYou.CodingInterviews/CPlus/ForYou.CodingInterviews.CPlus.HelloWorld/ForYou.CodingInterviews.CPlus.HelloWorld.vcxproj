@@ -148,6 +148,7 @@
     <ClCompile Include="method_head_student.cpp" />
     <ClCompile Include="method_student.cpp" />
     <ClCompile Include="multiplication_table.cpp" />
+    <ClCompile Include="pointer_array.cpp" />
     <ClCompile Include="pointer_student.cpp" />
   </ItemGroup>
   <ItemGroup>
