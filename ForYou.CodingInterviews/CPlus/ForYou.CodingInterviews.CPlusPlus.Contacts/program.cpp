@@ -20,6 +20,7 @@ int main()
 			save_contact(contancts, 1000, add_contact());
 			break;
 		case 2:
+			delete_contanct(contancts, 1000);
 			break;
 		default:
 			break;

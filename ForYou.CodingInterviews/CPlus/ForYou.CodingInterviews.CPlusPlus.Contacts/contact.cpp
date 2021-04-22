@@ -50,3 +50,28 @@ void save_contact(contactInfo contacts[], int len, contactInfo contact)
 	}
 
 }
+
+void delete_contanct(contactInfo contancts[], int len)
+{
+	string name;
+	cout << "请输入删除人姓名" << endl;
+	cin >> name;
+	if (name == "")
+	{
+		cout << "输入为空" << endl;
+		return;
+	}
+	bool mark = false;
+	for (int i = 0; i < len; i++)
+	{
+		if (contancts[i].name == name)
+		{
+			contancts[i] = { "",0,"" };
+			mark = true;
+		}
+	}
+	if (mark == false)
+	{
+		cout << name << "不存在" << endl;
+	}
+}
