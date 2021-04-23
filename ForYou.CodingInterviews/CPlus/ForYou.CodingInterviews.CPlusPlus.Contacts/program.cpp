@@ -22,6 +22,8 @@ int main()
 		case 2:
 			delete_contanct(contancts, 1000);
 			break;
+		case 5:
+			return 0;
 		default:
 			break;
 		}
