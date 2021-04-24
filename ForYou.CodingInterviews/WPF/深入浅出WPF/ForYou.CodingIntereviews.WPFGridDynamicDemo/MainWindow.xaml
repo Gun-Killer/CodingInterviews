@@ -1,0 +1,38 @@
+﻿<Window x:Class="ForYou.CodingIntereviews.WPFGridDynamicDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ForYou.CodingIntereviews.WPFGridDynamicDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10" ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel>
+            <Button Margin="10"  MinWidth="100" Name="btn1">Pre</Button>
+            <Button Margin="10">Next</Button>
+            <CheckBox x:Name="btn_text_change" Margin="10" Checked="btn_text_change_Checked" Unchecked="btn_text_change_Unchecked">text change</CheckBox>
+        </StackPanel>
+        <TextBox Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" TextWrapping="Wrap"  HorizontalContentAlignment="Stretch">10、 真正的幸福并不遥不可及，其实它就在你的眼前。但令人惋惜的是人们常常忽视这一刻的幸福。每天的生活就像爬山，偶尔望望山顶将使你时刻记着自己的目标；每一个新的视角都能看到许多别样的风景；慢慢往上爬，享受攀登过程中的每一分钟。只有这样，到达山顶时你看到的才是整个旅程中最美的风景。 ——佛朗索瓦·勒洛尔
+
+11、 心底能藏着这样的一个人，真的很好，他承载着你的青春，即使垂垂老去，你想起他，眼前看见的，一定还是当年那个穿着碎花长裙帆布鞋，在校园里横冲直撞的自己。
+
+12、 我会心存感激，时常记得在心里默念那句话——美好，是因为相信。真爱只有用真爱才换得回来，所以，我相信。
+
+13、 就这样，我不断地更换认识的人，也不断地使自己进入不认识的人们之中去。
+
+14、 如果一个人在青春期不具备缥缈的幻想，那么这个人注定是乏味的。 ——许知远《那些忧伤的年轻人》
+
+15、 这一程山水中，感谢你所给予的那些温暖的陪伴，感谢你所带给我的欣喜和感动。
+
+16、 【珍惜】像黑夜里行者望见了星星，像饥饿的宝宝吸吮着乳汁，像久早的禾苗迎来了春雨，我的心很滋润很清新，昨夜睡得很香很安稳，因为我赢得了你的心，心仪的人终于回到我身边，让我心花怒放泪沾襟。</TextBox>
+        <Button Grid.Row="1" Grid.Column="0" Margin="10,5,10,10" Width="auto">Close</Button>
+    </Grid>
+</Window>
