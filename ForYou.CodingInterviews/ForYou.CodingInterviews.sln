@@ -31,9 +31,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.WPF
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LayoutDemo", "LayoutDemo", "{98D155C1-D3A8-445A-8309-A4EA70365FF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingIntereviews.WPFLayoutGrid", "WPF\深入浅出WPF\ForYou.CodingIntereviews.WPFLayoutGrid\ForYou.CodingIntereviews.WPFLayoutGrid.csproj", "{0D091D07-8438-4883-B4AC-98E819B9ACF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.WPFLayoutGrid", "WPF\深入浅出WPF\ForYou.CodingIntereviews.WPFLayoutGrid\ForYou.CodingInterviews.WPFLayoutGrid.csproj", "{0D091D07-8438-4883-B4AC-98E819B9ACF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingIntereviews.WPFGridDynamicDemo", "WPF\深入浅出WPF\ForYou.CodingIntereviews.WPFGridDynamicDemo\ForYou.CodingIntereviews.WPFGridDynamicDemo.csproj", "{BDDE174D-F83A-4673-AF1B-1F9460F557F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.WPFGridDynamicDemo", "WPF\深入浅出WPF\ForYou.CodingIntereviews.WPFGridDynamicDemo\ForYou.CodingInterviews.WPFGridDynamicDemo.csproj", "{BDDE174D-F83A-4673-AF1B-1F9460F557F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.WPFLayoutWrapPanel", "WPF\深入浅出WPF\ForYou.CodingInterviews.WPFLayoutWrapPanel\ForYou.CodingInterviews.WPFLayoutWrapPanel.csproj", "{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -185,6 +187,18 @@ Global
 		{BDDE174D-F83A-4673-AF1B-1F9460F557F2}.Release|x64.Build.0 = Release|Any CPU
 		{BDDE174D-F83A-4673-AF1B-1F9460F557F2}.Release|x86.ActiveCfg = Release|Any CPU
 		{BDDE174D-F83A-4673-AF1B-1F9460F557F2}.Release|x86.Build.0 = Release|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Debug|x64.Build.0 = Debug|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Debug|x86.Build.0 = Debug|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Release|x64.ActiveCfg = Release|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Release|x64.Build.0 = Release|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Release|x86.ActiveCfg = Release|Any CPU
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -202,6 +216,7 @@ Global
 		{98D155C1-D3A8-445A-8309-A4EA70365FF2} = {A1E73018-506C-4F19-9FE2-DE44D6244A72}
 		{0D091D07-8438-4883-B4AC-98E819B9ACF5} = {98D155C1-D3A8-445A-8309-A4EA70365FF2}
 		{BDDE174D-F83A-4673-AF1B-1F9460F557F2} = {98D155C1-D3A8-445A-8309-A4EA70365FF2}
+		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368} = {98D155C1-D3A8-445A-8309-A4EA70365FF2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A27EAF7D-BA4C-47B7-B9ED-8E31D9E99FEA}
