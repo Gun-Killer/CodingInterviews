@@ -18,5 +18,8 @@
     <ClCompile Include="program.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="reference_method.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

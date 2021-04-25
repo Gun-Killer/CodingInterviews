@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int main()
+int main1()
 {
 	int* arr = new int[1000];
 
