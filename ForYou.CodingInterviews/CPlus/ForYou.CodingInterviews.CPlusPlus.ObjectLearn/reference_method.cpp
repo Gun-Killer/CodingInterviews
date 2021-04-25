@@ -22,7 +22,7 @@ void swap_reference(int& num1, int& num2) {
 	num2 = temp;
 }
 
-int main()
+int main2()
 {
 	int num1 = 10;
 	int num2 = 20;

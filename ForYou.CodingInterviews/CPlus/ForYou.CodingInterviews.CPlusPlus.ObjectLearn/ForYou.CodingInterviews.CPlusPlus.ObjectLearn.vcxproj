@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="003method_return_reference.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="reference_method.cpp" />
   </ItemGroup>

@@ -21,5 +21,8 @@
     <ClCompile Include="reference_method.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="003method_return_reference.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
