@@ -18,7 +18,7 @@ int& method1()
 }
 
 
-int main()
+int main3()
 {
 
 	int& num1 = method();
@@ -26,8 +26,8 @@ int main()
 	cout << num1 << endl;
 	cout << num1 << endl;
 	method() = 30;
-	cout << num1 << endl;
-	cout << num1 << endl;
+	cout << num1 << endl;//30
+	cout << num1 << endl;//ยาย๋
 	cout << num1 << endl;
 
 	int& num2 = method1();
