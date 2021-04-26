@@ -9,7 +9,7 @@ void const_reference_method(const int& input)
 	cout << input << endl;
 }
 
-int main()
+int main4()
 {
 	//int& num1 = 10;// error
 	const int& num2 = 20;

@@ -27,5 +27,8 @@
     <ClCompile Include="004const_reference.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="005method_overload.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
