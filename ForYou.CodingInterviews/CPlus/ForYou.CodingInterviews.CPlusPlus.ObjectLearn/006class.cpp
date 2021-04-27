@@ -13,6 +13,20 @@ public:
 	{
 		return m_age;
 	}
+
+protected :
+	string name;
+public:
+
+	void show()
+	{
+		name;
+	}
+
+	void setName(string name)
+	{
+		cout << name << endl;
+	}
 };
 
 int main()
@@ -21,6 +35,9 @@ int main()
 	p.m_age = 10;
 
 	cout << p.getAge() << endl;
+
+	p.setName("hhh");
+	p.show();
 
 	return 0;
 }
