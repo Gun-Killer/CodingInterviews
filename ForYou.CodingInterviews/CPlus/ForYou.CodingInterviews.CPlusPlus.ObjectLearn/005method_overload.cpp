@@ -16,7 +16,7 @@ int method(int num1, long num2);
 
 int method(long num1, int num2);
 
-int main()
+int main5()
 {
 	cout << method(10) << endl;
 	cout << method(11L) << endl;

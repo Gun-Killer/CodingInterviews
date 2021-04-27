@@ -142,6 +142,7 @@
     <ClCompile Include="003method_return_reference.cpp" />
     <ClCompile Include="004const_reference.cpp" />
     <ClCompile Include="005method_overload.cpp" />
+    <ClCompile Include="006class.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="reference_method.cpp" />
   </ItemGroup>
