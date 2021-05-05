@@ -144,11 +144,14 @@
     <ClCompile Include="005method_overload.cpp" />
     <ClCompile Include="006class.cpp" />
     <ClCompile Include="007class.cpp" />
+    <ClCompile Include="008class.cpp" />
+    <ClCompile Include="movie.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="reference_method.cpp" />
     <ClCompile Include="student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="movie.h" />
     <ClInclude Include="student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

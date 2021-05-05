@@ -2,7 +2,7 @@
 using namespace std;
 #include "student.h"
 
-int main()
+int main7()
 {
 	
 	student s1;

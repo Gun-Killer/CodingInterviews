@@ -39,9 +39,18 @@
     <ClCompile Include="student.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="008class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="movie.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="student.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="movie.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
