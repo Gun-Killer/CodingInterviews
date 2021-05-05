@@ -29,7 +29,7 @@ public:
 	}
 };
 
-int main()
+int main6()
 {
 	person p;
 	p.m_age = 10;

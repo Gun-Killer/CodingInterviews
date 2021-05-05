@@ -143,8 +143,13 @@
     <ClCompile Include="004const_reference.cpp" />
     <ClCompile Include="005method_overload.cpp" />
     <ClCompile Include="006class.cpp" />
+    <ClCompile Include="007class.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="reference_method.cpp" />
+    <ClCompile Include="student.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

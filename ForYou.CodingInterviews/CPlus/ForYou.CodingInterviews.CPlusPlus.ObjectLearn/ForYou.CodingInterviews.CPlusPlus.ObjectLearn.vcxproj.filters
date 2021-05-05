@@ -33,5 +33,16 @@
     <ClCompile Include="006class.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="007class.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="student.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="student.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
