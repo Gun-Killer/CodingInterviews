@@ -5,12 +5,20 @@ movie::movie()
 	cout << "empty ctor action" << endl;
 }
 
-movie::movie(movie& m)
+movie::movie(const movie& m)
 {
 	cout << "copy ctor action" << endl;
-	m_title = m.getTitle();
+	m_title = m.m_title;
+	m_score = new int(*m.m_score);
 }
-
+movie::~movie()
+{
+	if (m_score != NULL)
+	{
+		delete m_score;
+		m_score = NULL;
+	}
+}
 string movie::getTitle()
 {
 	return m_title;

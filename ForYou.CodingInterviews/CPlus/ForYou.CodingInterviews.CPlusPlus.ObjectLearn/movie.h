@@ -6,12 +6,19 @@ class movie
 {
 public:
 	movie();
-	movie(movie& m);
+	movie(const movie& m);
 private:
 	string m_title;
+	
+	
 public:
+
+	int* m_score;
+
 	string getTitle();
 
 	void setTitle(string title);
+
+	~movie();
 };
 

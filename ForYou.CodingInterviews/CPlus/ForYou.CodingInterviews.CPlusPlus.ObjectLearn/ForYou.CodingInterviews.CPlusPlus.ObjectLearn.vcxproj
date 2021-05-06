@@ -145,6 +145,7 @@
     <ClCompile Include="006class.cpp" />
     <ClCompile Include="007class.cpp" />
     <ClCompile Include="008class.cpp" />
+    <ClCompile Include="009copy.cpp" />
     <ClCompile Include="movie.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="reference_method.cpp" />

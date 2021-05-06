@@ -6,7 +6,7 @@ void foo(movie m)
 {
 	cout << m.getTitle() << endl;
 }
-int main()
+int main8()
 {
 	movie m1;
 	m1.setTitle("2012");
