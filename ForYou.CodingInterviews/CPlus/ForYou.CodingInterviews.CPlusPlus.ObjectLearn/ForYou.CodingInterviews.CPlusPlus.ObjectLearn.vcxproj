@@ -146,12 +146,15 @@
     <ClCompile Include="007class.cpp" />
     <ClCompile Include="008class.cpp" />
     <ClCompile Include="009copy.cpp" />
+    <ClCompile Include="010intlist.cpp" />
+    <ClCompile Include="initListLearn.cpp" />
     <ClCompile Include="movie.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="reference_method.cpp" />
     <ClCompile Include="student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="initListLearn.h" />
     <ClInclude Include="movie.h" />
     <ClInclude Include="student.h" />
   </ItemGroup>

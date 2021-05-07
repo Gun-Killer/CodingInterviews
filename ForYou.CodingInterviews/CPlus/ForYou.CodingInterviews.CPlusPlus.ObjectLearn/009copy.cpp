@@ -3,7 +3,7 @@ using namespace std;
 #include "movie.h"
 
 //深拷贝在堆区重新分配空间
-int main()
+int main9()
 {
 	movie m1;
 	m1.m_score = new int(10);

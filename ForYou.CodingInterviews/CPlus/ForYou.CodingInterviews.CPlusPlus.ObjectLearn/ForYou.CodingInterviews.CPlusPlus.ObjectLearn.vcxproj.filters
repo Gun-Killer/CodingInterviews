@@ -48,12 +48,21 @@
     <ClCompile Include="009copy.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="010intlist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="initListLearn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="student.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="movie.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="initListLearn.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
