@@ -2,7 +2,7 @@
 using namespace std;
 #include "initListLearn.h"
 
-int main()
+int main10()
 {
 	initListLearn p1;
 

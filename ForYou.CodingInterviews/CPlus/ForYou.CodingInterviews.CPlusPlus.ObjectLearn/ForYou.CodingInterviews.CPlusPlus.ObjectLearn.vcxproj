@@ -147,15 +147,18 @@
     <ClCompile Include="008class.cpp" />
     <ClCompile Include="009copy.cpp" />
     <ClCompile Include="010intlist.cpp" />
+    <ClCompile Include="011ClassStaticMember.cpp" />
     <ClCompile Include="initListLearn.cpp" />
     <ClCompile Include="movie.cpp" />
     <ClCompile Include="program.cpp" />
     <ClCompile Include="reference_method.cpp" />
+    <ClCompile Include="StaticMemberClasss.cpp" />
     <ClCompile Include="student.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="initListLearn.h" />
     <ClInclude Include="movie.h" />
+    <ClInclude Include="StaticMemberClasss.h" />
     <ClInclude Include="student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

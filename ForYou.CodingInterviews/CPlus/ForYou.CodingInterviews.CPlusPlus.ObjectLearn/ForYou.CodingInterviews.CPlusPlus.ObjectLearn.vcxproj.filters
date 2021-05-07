@@ -54,6 +54,12 @@
     <ClCompile Include="initListLearn.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="011ClassStaticMember.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticMemberClasss.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="student.h">
@@ -63,6 +69,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="initListLearn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticMemberClasss.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
