@@ -60,6 +60,9 @@
     <ClCompile Include="StaticMemberClasss.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="012ObjectMemory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="student.h">

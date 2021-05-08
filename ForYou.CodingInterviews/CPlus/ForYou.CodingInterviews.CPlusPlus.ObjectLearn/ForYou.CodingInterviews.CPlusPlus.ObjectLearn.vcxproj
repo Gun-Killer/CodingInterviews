@@ -148,6 +148,7 @@
     <ClCompile Include="009copy.cpp" />
     <ClCompile Include="010intlist.cpp" />
     <ClCompile Include="011ClassStaticMember.cpp" />
+    <ClCompile Include="012ObjectMemory.cpp" />
     <ClCompile Include="initListLearn.cpp" />
     <ClCompile Include="movie.cpp" />
     <ClCompile Include="program.cpp" />
