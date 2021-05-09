@@ -1,0 +1,48 @@
+﻿<Window x:Class="ForYou.Codinginterview.WPFManagementSystemClient.View.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ForYou.Codinginterview.WPFManagementSystemClient.View"
+        mc:Ignorable="d"
+        Title="LoginView" Height="600" Width="360" WindowStyle="None" ResizeMode="NoResize" AllowsTransparency="True" WindowStartupLocation="CenterScreen" Background="{x:Null}">
+    <Border Margin="5" CornerRadius="10" Background="White">
+        <Border.Effect>
+            <DropShadowEffect Color="Gray" Opacity="0.3" Direction="0" BlurRadius="5" ShadowDepth="0"></DropShadowEffect>
+        </Border.Effect>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+
+
+            <Border Background="Blue" CornerRadius ="10,10,0,0">
+                <DockPanel>
+                    <Button  Height="30" Width="40" DockPanel.Dock="Top" Background="Transparent" VerticalAlignment="Top" HorizontalAlignment="Right"  Content="X" FontSize="20">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border BorderThickness="0" CornerRadius="0,5,0,0" Background="{TemplateBinding Background}" Name="back">
+                                    <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center" Content="{TemplateBinding Content}"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter TargetName="back" Property="Background" Value="#22FFFFFF"></Setter>
+                                    </Trigger>
+                                    <Trigger Property="IsPressed" Value="True">
+                                        <Setter TargetName="back" Property="Background" Value="#44FFFFFF"></Setter>
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Border Height="60" Width="60" CornerRadius="20">
+                        <Image Source="../Assets/Images/logo.jpg"></Image>
+                    </Border>
+                </DockPanel>
+            </Border>
+
+        </Grid>
+    </Border>
+</Window>
