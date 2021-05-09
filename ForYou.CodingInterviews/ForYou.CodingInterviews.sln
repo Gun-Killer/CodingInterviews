@@ -27,17 +27,21 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.CPl
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.WPFGridSplitter", "WPF\深入浅出WPF\ForYou.CodingInterviews.WPFGridSplitter\ForYou.CodingInterviews.WPFGridSplitter.csproj", "{E94A619B-5187-4CCD-9FB0-28514C21A37A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.WPFCanvas", "WPF\深入浅出WPF\ForYou.CodingInterviews.WPFCanvas\ForYou.CodingInterviews.WPFCanvas.csproj", "{D059A014-CB35-4809-8E31-826C74974754}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.WPFCanvas", "WPF\深入浅出WPF\ForYou.CodingInterviews.WPFCanvas\ForYou.CodingInterviews.WPFCanvas.csproj", "{D059A014-CB35-4809-8E31-826C74974754}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LayoutDemo", "LayoutDemo", "{98D155C1-D3A8-445A-8309-A4EA70365FF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.WPFLayoutGrid", "WPF\深入浅出WPF\ForYou.CodingIntereviews.WPFLayoutGrid\ForYou.CodingInterviews.WPFLayoutGrid.csproj", "{0D091D07-8438-4883-B4AC-98E819B9ACF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.WPFLayoutGrid", "WPF\深入浅出WPF\ForYou.CodingIntereviews.WPFLayoutGrid\ForYou.CodingInterviews.WPFLayoutGrid.csproj", "{0D091D07-8438-4883-B4AC-98E819B9ACF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.WPFGridDynamicDemo", "WPF\深入浅出WPF\ForYou.CodingIntereviews.WPFGridDynamicDemo\ForYou.CodingInterviews.WPFGridDynamicDemo.csproj", "{BDDE174D-F83A-4673-AF1B-1F9460F557F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.WPFGridDynamicDemo", "WPF\深入浅出WPF\ForYou.CodingIntereviews.WPFGridDynamicDemo\ForYou.CodingInterviews.WPFGridDynamicDemo.csproj", "{BDDE174D-F83A-4673-AF1B-1F9460F557F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.WPFLayoutWrapPanel", "WPF\深入浅出WPF\ForYou.CodingInterviews.WPFLayoutWrapPanel\ForYou.CodingInterviews.WPFLayoutWrapPanel.csproj", "{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.WPFLayoutWrapPanel", "WPF\深入浅出WPF\ForYou.CodingInterviews.WPFLayoutWrapPanel\ForYou.CodingInterviews.WPFLayoutWrapPanel.csproj", "{2A6DF721-6521-4283-BEC7-AE0A1C3AC368}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.CPlusPlus.ObjectLearn", "CPlus\ForYou.CodingInterviews.CPlusPlus.ObjectLearn\ForYou.CodingInterviews.CPlusPlus.ObjectLearn.vcxproj", "{A0862F00-C469-4A8B-8945-BD75697AA0F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManagementSystem", "ManagementSystem", "{7AC6CFCA-23B3-45A4-819C-B2EB3798BDA0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.Codinginterview.WPFManagementSystemClient", "WPF\ManagementSystem\ForYou.Codinginterview.WPFManagementSystemClient\ForYou.Codinginterview.WPFManagementSystemClient.csproj", "{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -211,6 +215,18 @@ Global
 		{A0862F00-C469-4A8B-8945-BD75697AA0F0}.Release|x64.Build.0 = Release|x64
 		{A0862F00-C469-4A8B-8945-BD75697AA0F0}.Release|x86.ActiveCfg = Release|Win32
 		{A0862F00-C469-4A8B-8945-BD75697AA0F0}.Release|x86.Build.0 = Release|Win32
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Debug|x64.Build.0 = Debug|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Debug|x86.Build.0 = Debug|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Release|x64.ActiveCfg = Release|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Release|x64.Build.0 = Release|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Release|x86.ActiveCfg = Release|Any CPU
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -230,6 +246,8 @@ Global
 		{BDDE174D-F83A-4673-AF1B-1F9460F557F2} = {98D155C1-D3A8-445A-8309-A4EA70365FF2}
 		{2A6DF721-6521-4283-BEC7-AE0A1C3AC368} = {98D155C1-D3A8-445A-8309-A4EA70365FF2}
 		{A0862F00-C469-4A8B-8945-BD75697AA0F0} = {0D636A4E-F199-4692-9F64-50AB365B19DB}
+		{7AC6CFCA-23B3-45A4-819C-B2EB3798BDA0} = {338AA266-6972-48AD-847A-117DBBE578E9}
+		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345} = {7AC6CFCA-23B3-45A4-819C-B2EB3798BDA0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A27EAF7D-BA4C-47B7-B9ED-8E31D9E99FEA}
