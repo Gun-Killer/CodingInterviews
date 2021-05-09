@@ -42,7 +42,7 @@ NotEmptyObject::~NotEmptyObject()
 {
 }
 
-int main()
+int main12()
 {
 	EmptyObject p;
 
