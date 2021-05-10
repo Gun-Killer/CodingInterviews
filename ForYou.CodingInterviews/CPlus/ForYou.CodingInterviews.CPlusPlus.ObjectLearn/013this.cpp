@@ -46,7 +46,7 @@ ThisObject::~ThisObject()
 {
 }
 
-int main()
+int main13()
 {
 	ThisObject obj(101);
 	obj.NumAdd(1).NumAdd(1);
