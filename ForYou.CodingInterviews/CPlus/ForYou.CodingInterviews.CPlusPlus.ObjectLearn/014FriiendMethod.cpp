@@ -35,7 +35,7 @@ void friendMethod(FriendMethdoObject& obj)
 	obj.method();
 }
 
-int main() 
+int main014() 
 {
 
 	FriendMethdoObject obj;
