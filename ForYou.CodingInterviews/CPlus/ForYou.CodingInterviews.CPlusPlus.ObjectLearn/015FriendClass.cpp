@@ -50,7 +50,7 @@ FriendObejct::~FriendObejct()
 {
 }
 
-int main()
+int main15()
 {
 
 	FriendObejct obj;

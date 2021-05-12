@@ -72,6 +72,9 @@
     <ClCompile Include="015FriendClass.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="016FriendClassMethod.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="student.h">
