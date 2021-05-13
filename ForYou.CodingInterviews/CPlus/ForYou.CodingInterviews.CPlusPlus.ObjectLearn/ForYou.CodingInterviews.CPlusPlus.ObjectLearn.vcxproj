@@ -153,6 +153,7 @@
     <ClCompile Include="014FriiendMethod.cpp" />
     <ClCompile Include="015FriendClass.cpp" />
     <ClCompile Include="016FriendClassMethod.cpp" />
+    <ClCompile Include="017Operator.cpp" />
     <ClCompile Include="initListLearn.cpp" />
     <ClCompile Include="movie.cpp" />
     <ClCompile Include="program.cpp" />

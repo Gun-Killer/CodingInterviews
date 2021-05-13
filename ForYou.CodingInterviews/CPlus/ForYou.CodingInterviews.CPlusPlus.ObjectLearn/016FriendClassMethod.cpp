@@ -58,7 +58,7 @@ FriendObject1::~FriendObject1()
 
 
 
-int main()
+int main016()
 {
 	FriendObject1 obj;
 	obj.friendMethod();
