@@ -33,7 +33,7 @@ OperatorObject::~OperatorObject()
 {
 }
 
-int main()
+int main017()
 {
 	OperatorObject obj1;
 	OperatorObject obj2;
