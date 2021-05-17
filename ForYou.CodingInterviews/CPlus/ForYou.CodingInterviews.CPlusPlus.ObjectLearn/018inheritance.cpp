@@ -47,7 +47,7 @@ namespace CPP
 	}
 }
 
-int main()
+int main18()
 {
 	CPP::ManObecjt man_obj1;
 	man_obj1.m_name = "name";
