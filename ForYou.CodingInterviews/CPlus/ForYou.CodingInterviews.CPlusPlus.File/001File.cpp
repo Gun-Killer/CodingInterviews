@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main()
+int main001()
 {
 	ofstream outfile;
 	outfile.open("123.txt", ios::out);
