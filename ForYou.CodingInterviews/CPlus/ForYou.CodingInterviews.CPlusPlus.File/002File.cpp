@@ -22,7 +22,7 @@ FileObject::~FileObject()
 {
 }
 
-int main()
+int main002()
 {
 	ofstream outfile;
 	outfile.open("123.txt", ios::out | ios::binary);
@@ -31,6 +31,7 @@ int main()
 
 	outfile.write((const char*)(file), sizeof(*file));
 
-	 
+	outfile.close();
+
 	return 0;
 }
