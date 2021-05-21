@@ -45,6 +45,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.Codinginterview.WPFM
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.CPlusPlus.File", "CPlus\ForYou.CodingInterviews.CPlusPlus.File\ForYou.CodingInterviews.CPlusPlus.File.vcxproj", "{7EC8FCA9-839E-4E4D-A3FF-994563CF5825}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.CPlusPlus.EmployeeSystem", "CPlus\ForYou.CodingInterviews.CPlusPlus.EmployeeSystem\ForYou.CodingInterviews.CPlusPlus.EmployeeSystem.vcxproj", "{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -239,6 +241,16 @@ Global
 		{7EC8FCA9-839E-4E4D-A3FF-994563CF5825}.Release|x64.Build.0 = Release|x64
 		{7EC8FCA9-839E-4E4D-A3FF-994563CF5825}.Release|x86.ActiveCfg = Release|Win32
 		{7EC8FCA9-839E-4E4D-A3FF-994563CF5825}.Release|x86.Build.0 = Release|Win32
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}.Debug|x64.ActiveCfg = Debug|x64
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}.Debug|x64.Build.0 = Debug|x64
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}.Debug|x86.ActiveCfg = Debug|Win32
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}.Debug|x86.Build.0 = Debug|Win32
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}.Release|Any CPU.ActiveCfg = Release|Win32
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}.Release|x64.ActiveCfg = Release|x64
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}.Release|x64.Build.0 = Release|x64
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}.Release|x86.ActiveCfg = Release|Win32
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -261,6 +273,7 @@ Global
 		{7AC6CFCA-23B3-45A4-819C-B2EB3798BDA0} = {338AA266-6972-48AD-847A-117DBBE578E9}
 		{AA472F0C-0CF5-4ACA-B48D-0F2B89948345} = {7AC6CFCA-23B3-45A4-819C-B2EB3798BDA0}
 		{7EC8FCA9-839E-4E4D-A3FF-994563CF5825} = {0D636A4E-F199-4692-9F64-50AB365B19DB}
+		{DEDC1FCA-D5BA-4113-BCF7-F60EDE2BADC1} = {0D636A4E-F199-4692-9F64-50AB365B19DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A27EAF7D-BA4C-47B7-B9ED-8E31D9E99FEA}
