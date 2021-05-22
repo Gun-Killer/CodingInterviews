@@ -7,7 +7,7 @@ public :
 
 	void showMenu();
 
-
+	void exit();
 
 
 
