@@ -1,5 +1,6 @@
 #include <iostream>
 #include "WorkerManager.h"
+#include "Employee.h"
 
 using namespace std;
 
