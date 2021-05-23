@@ -1,4 +1,13 @@
 #pragma once
+#include <iostream>
+#include <string>
+#include "Worker.h"
+#include "Employee.h"
+#include "Manager.h"
+#include "Boos.h"
+
+using namespace std;
+
 class WorkerManager
 {
 public :
@@ -9,12 +18,15 @@ public :
 
 	void exit();
 
-
-
-
-
+	void add();
 
 
 	~WorkerManager();
+
+private:
+	int m_count;
+	Worker** m_array;
+
+	void showDepartment();
 };
 

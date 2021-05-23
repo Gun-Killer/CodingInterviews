@@ -20,10 +20,13 @@ int main()
 		case 0:
 			wm.exit();
 			break;
+		case 1:
+			wm.add();
+			break;
 		default:
-			system("cls");
 			break;
 		}
+		system("cls");
 	}
 	return 0;
 }
