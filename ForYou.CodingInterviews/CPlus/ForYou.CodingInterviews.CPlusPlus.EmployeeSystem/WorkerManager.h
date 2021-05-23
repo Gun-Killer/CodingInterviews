@@ -33,5 +33,9 @@ private:
 	void showDepartment();
 
 	void save();
+
+	int employeeCount();
+
+	void initFromFile();
 };
 

@@ -16,7 +16,7 @@ void Manager::showInfo()
 	cout << "Id: " << m_id
 		<< "\tName: " << m_name
 		<< "\tDepartment: " << getDepartmentName()
-		<< "\tResponsitory: manage employee"
+		<< "\tResponsibility: manage employee"
 		<< endl;
 }
 

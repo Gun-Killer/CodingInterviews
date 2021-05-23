@@ -5,8 +5,29 @@ using namespace std;
 
 WorkerManager::WorkerManager()
 {
-	this->m_count = 0;
-	this->m_array = NULL;
+	ifstream read_file;
+	read_file.open(FILENAME, ios::in);
+	if (read_file.is_open())
+	{
+		char end_char;
+		read_file >> end_char;
+		if (read_file.eof())
+		{
+			this->m_count = 0;
+			this->m_array = NULL;
+		}
+		else
+		{
+			this->m_count = employeeCount();
+			initFromFile();
+		}
+	}
+	else
+	{
+		this->m_count = 0;
+		this->m_array = NULL;
+	}
+	read_file.close();
 }
 
 void WorkerManager::showMenu()
@@ -124,4 +145,66 @@ void WorkerManager::save()
 			<< endl;
 	}
 	save_file.close();
+}
+
+int WorkerManager::employeeCount()
+{
+	ifstream read_file;
+	read_file.open(FILENAME, ios::in);
+	if (read_file.is_open() == false)
+	{
+		return 0;
+	}
+
+	int id;
+	string name;
+	int did;
+	int count = 0;
+
+	while (read_file >> id && read_file >> name && read_file >> did)
+	{
+		count++;
+	}
+
+	read_file.close();
+	return count;
+}
+
+void WorkerManager::initFromFile()
+{
+	ifstream read_file;
+	read_file.open(FILENAME, ios::in);
+	if (read_file.is_open() == false)
+	{
+		return;
+	}
+	this->m_array = new Worker * [this->m_count];
+	int id;
+	string name;
+	int did;
+	int index = 0;
+
+	while (read_file >> id && read_file >> name && read_file >> did)
+	{
+		if (did == 1)
+		{
+			m_array[index] = new Employee(id, name, did);
+		}
+		else if (did == 2)
+		{
+			m_array[index] = new Manager(id, name, did);
+		}
+		else
+		{
+			m_array[index] = new Boos(id, name, did);
+		}
+		index++;
+	}
+
+	/*for (int i = 0; i < m_count; i++)
+	{
+		m_array[i]->showInfo();
+	}*/
+
+	read_file.close();
 }

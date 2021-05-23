@@ -15,7 +15,7 @@ void Boos::showInfo()
 	cout << "Id: " << m_id
 		<< "\tName: " << m_name
 		<< "\tDepartment: " << getDepartmentName()
-		<< "\tResponsitory: manage manager"
+		<< "\tResponsibility: manage manager"
 		<< endl;
 }
 
