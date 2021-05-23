@@ -5,6 +5,9 @@
 #include "Employee.h"
 #include "Manager.h"
 #include "Boos.h"
+#include <fstream>
+
+#define FILENAME "info.txt"
 
 using namespace std;
 
@@ -28,5 +31,7 @@ private:
 	Worker** m_array;
 
 	void showDepartment();
+
+	void save();
 };
 

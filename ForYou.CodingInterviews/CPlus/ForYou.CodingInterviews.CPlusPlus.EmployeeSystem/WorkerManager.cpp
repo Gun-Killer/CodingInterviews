@@ -85,6 +85,8 @@ void WorkerManager::add()
 	}
 	this->m_count = current_count;
 	this->m_array = new_array;
+
+	save();
 }
 
 
@@ -103,4 +105,23 @@ void WorkerManager::showDepartment()
 	cout << "1¡¢Employee" << endl;
 	cout << "2¡¢Manager" << endl;
 	cout << "3¡¢Boss" << endl;
+}
+
+void WorkerManager::save()
+{
+	if (this->m_count < 1)
+	{
+		return;
+	}
+
+	ofstream save_file;
+	save_file.open(FILENAME, ios::out);
+	for (int i = 0; i < this->m_count; i++)
+	{
+		save_file << m_array[i]->m_id << " "
+			<< m_array[i]->m_name << " "
+			<< m_array[i]->m_did
+			<< endl;
+	}
+	save_file.close();
 }
