@@ -13,29 +13,36 @@ using namespace std;
 
 class WorkerManager
 {
-public :
-	WorkerManager();
+public:
+    WorkerManager();
 
 
-	void showMenu();
+    void showMenu();
 
-	void exit();
+    void exit();
 
-	void add();
+    void add();
 
+    void showAll();
 
-	~WorkerManager();
+    int findIndex(int id);
+
+    void remove();
+
+    ~WorkerManager();
 
 private:
-	int m_count;
-	Worker** m_array;
+    int m_count;
+    Worker** m_array;
 
-	void showDepartment();
+    void showDepartment();
 
-	void save();
+    void save();
 
-	int employeeCount();
+    int employeeCount();
 
-	void initFromFile();
+    void initFromFile();
+
+    void consoleCls();
 };
 

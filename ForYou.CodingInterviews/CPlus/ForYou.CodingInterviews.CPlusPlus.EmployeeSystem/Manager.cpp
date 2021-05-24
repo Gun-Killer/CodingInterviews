@@ -13,9 +13,9 @@ Manager::Manager(int id, string name, int did)
 
 void Manager::showInfo()
 {
-	cout << "Id: " << m_id
-		<< "\tName: " << m_name
-		<< "\tDepartment: " << getDepartmentName()
+	cout << "Id: \t" << m_id
+		<< "\tName: \t" << m_name
+		<< "\tDepartment: \t" << getDepartmentName()
 		<< "\tResponsibility: manage employee"
 		<< endl;
 }
