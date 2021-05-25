@@ -254,6 +254,14 @@ void WorkerManager::clear()
     {
         return;
     }
+    for (int i = 0; i < m_count; i++)
+    {
+        if (m_array[i] != NULL)
+        {
+            delete m_array[i];
+            m_array[i] = NULL;
+        }
+    }
     delete[] this->m_array;
     this->m_array = NULL;
     this->m_count = 0;
@@ -266,6 +274,14 @@ WorkerManager::~WorkerManager()
     if (this->m_array == NULL)
     {
         return;
+    }
+    for (int i = 0; i < m_count; i++)
+    {
+        if (m_array[i] != NULL)
+        {
+            delete m_array[i];
+            m_array[i] = NULL;
+        }
     }
     delete[] this->m_array;
     this->m_array = NULL;
