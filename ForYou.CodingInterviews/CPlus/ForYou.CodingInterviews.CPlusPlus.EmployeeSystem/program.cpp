@@ -29,6 +29,18 @@ int main()
         case 3:
             wm.remove();
             break;
+        case 4:
+            wm.update();
+            break;
+        case 5:
+            wm.find();
+            break;
+        case 6:
+            wm.sortById();
+            break;
+        case 7:
+            wm.clear();
+            break;
         default:
             break;
         }

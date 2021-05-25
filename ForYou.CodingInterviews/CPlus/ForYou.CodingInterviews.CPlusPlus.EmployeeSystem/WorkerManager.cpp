@@ -165,6 +165,101 @@ void WorkerManager::remove()
     consoleCls();
 }
 
+void WorkerManager::update()
+{
+    int update_id;
+    cout << "Please Input Id" << endl;
+    cin >> update_id;
+    int index = findIndex(update_id);
+    if (index < 0)
+    {
+        cout << "Not Found" << endl;
+        consoleCls();
+        return;
+    }
+
+    string name;
+    int did;
+    cout << "Input Name" << endl;
+    cin >> name;
+    cout << "Input Did" << endl;
+    cin >> did;
+
+    if (did == m_array[index]->m_did)
+    {
+        m_array[index]->m_name = name;
+    }
+    else
+    {
+        int id = m_array[index]->m_id;
+        delete m_array[index];
+        if (did == 1)
+        {
+            m_array[index] = new Employee(id, name, did);
+        }
+        else if (did == 2)
+        {
+            m_array[index] = new Manager(id, name, did);
+        }
+        else
+        {
+            m_array[index] = new Boos(id, name, did);
+        }
+    }
+
+    save();
+    consoleCls();
+}
+
+void WorkerManager::find()
+{
+    int id;
+    cout << "Please Input Id" << endl;
+    cin >> id;
+    int index = findIndex(id);
+    if (index < 0)
+    {
+        cout << "Not Found" << endl;
+        consoleCls();
+        return;
+    }
+    m_array[index]->showInfo();
+    consoleCls();
+}
+
+void WorkerManager::sortById()
+{
+    if (this->m_count < 1)
+    {
+        return;
+    }
+    for (int i = 0; i < this->m_count; i++)
+    {
+        for (int j = i + 1; j < this->m_count; j++)
+        {
+            if (m_array[i]->m_id > m_array[j]->m_id)
+            {
+                Worker* cache = m_array[i];
+                m_array[i] = m_array[j];
+                m_array[j] = cache;
+            }
+        }
+    }
+    save();
+}
+
+void WorkerManager::clear()
+{
+    if (this->m_count < 1)
+    {
+        return;
+    }
+    delete[] this->m_array;
+    this->m_array = NULL;
+    this->m_count = 0;
+    save();
+}
+
 
 WorkerManager::~WorkerManager()
 {
@@ -185,19 +280,21 @@ void WorkerManager::showDepartment()
 
 void WorkerManager::save()
 {
-    if (this->m_count < 1)
-    {
-        return;
-    }
-
     ofstream save_file;
     save_file.open(FILENAME, ios::out);
-    for (int i = 0; i < this->m_count; i++)
+    if (this->m_count < 1)
     {
-        save_file << m_array[i]->m_id << " "
-            << m_array[i]->m_name << " "
-            << m_array[i]->m_did
-            << endl;
+        save_file.clear();
+    }
+    else
+    {
+        for (int i = 0; i < this->m_count; i++)
+        {
+            save_file << m_array[i]->m_id << " "
+                << m_array[i]->m_name << " "
+                << m_array[i]->m_did
+                << endl;
+        }
     }
     save_file.close();
 }

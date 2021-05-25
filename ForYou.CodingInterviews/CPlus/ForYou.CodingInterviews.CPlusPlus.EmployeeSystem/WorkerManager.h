@@ -29,6 +29,14 @@ public:
 
     void remove();
 
+    void update();
+
+    void find();
+
+    void sortById();
+
+    void clear();
+
     ~WorkerManager();
 
 private:
