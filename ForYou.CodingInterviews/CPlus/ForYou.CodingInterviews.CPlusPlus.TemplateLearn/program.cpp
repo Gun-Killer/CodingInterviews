@@ -11,7 +11,7 @@ void swap(T& input1, T& input2)
     input2 = temp;
 }
 
-int main()
+int main001()
 {
     int num1 = 24;
     int num2 = 34;
