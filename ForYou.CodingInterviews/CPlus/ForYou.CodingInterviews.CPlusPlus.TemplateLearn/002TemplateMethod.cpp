@@ -31,7 +31,7 @@ void sortArray(T arr[], int len)
     }
 }
 
-int main()
+int main002()
 {
     int arr[] = { 0 ,8,9,4,20,1 };
 
