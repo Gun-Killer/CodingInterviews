@@ -30,7 +30,7 @@ template<> bool objEqueals(StudentObject& input1, StudentObject& input2)
     return input1.m_age == input2.m_age;
 }
 
-int main()
+int main003()
 {
     StudentObject a(1);
     StudentObject b(2);
