@@ -144,6 +144,9 @@
     <ClCompile Include="004ClassTemplate.cpp" />
     <ClCompile Include="program.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TemplateClass.hpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

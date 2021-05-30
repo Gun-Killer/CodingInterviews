@@ -3,6 +3,8 @@
 
 using namespace std;
 
+#include "TemplateClass.hpp"
+
 
 template <class T1,class T2>
 class PersonObject
@@ -21,6 +23,12 @@ public:
 int main()
 {
     PersonObject<string, int> p("kk", 10);
+
+    cout << typeid(p).name() << endl;
+
+
+    TemplateClassObject<int, int> p1(1, 2);
+    p1.printf();
 
     return 0;
 }
