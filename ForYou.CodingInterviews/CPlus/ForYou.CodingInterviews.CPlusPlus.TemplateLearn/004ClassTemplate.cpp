@@ -20,7 +20,7 @@ public:
 };
 
 
-int main()
+int main004()
 {
     PersonObject<string, int> p("kk", 10);
 

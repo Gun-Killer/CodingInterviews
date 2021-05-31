@@ -27,6 +27,9 @@
     <ClCompile Include="004ClassTemplate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="005Vector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TemplateClass.hpp">
