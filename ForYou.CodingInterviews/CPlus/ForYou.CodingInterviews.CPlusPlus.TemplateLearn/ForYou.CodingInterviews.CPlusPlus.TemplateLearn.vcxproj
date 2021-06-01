@@ -143,6 +143,7 @@
     <ClCompile Include="003TemplateMethod.cpp" />
     <ClCompile Include="004ClassTemplate.cpp" />
     <ClCompile Include="005Vector.cpp" />
+    <ClCompile Include="006Vector.cpp" />
     <ClCompile Include="program.cpp" />
   </ItemGroup>
   <ItemGroup>

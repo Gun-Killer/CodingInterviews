@@ -7,7 +7,7 @@ void test(int val)
 {
     cout << val << endl;
 }
-int main()
+int main005()
 {
     vector<int> array;
     array.push_back(1);
