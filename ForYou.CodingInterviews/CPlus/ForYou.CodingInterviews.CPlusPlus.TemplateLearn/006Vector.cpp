@@ -20,7 +20,7 @@ public:
     }
 };
 
-int main()
+int main006()
 
 {
     vector<VertorItemObject> p;
