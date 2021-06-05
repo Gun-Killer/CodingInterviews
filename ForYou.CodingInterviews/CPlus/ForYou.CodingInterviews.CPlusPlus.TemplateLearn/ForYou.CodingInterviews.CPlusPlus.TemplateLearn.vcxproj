@@ -145,6 +145,8 @@
     <ClCompile Include="005Vector.cpp" />
     <ClCompile Include="006Vector.cpp" />
     <ClCompile Include="007.cpp" />
+    <ClCompile Include="008VectorConstruct.cpp" />
+    <ClCompile Include="common.cpp" />
     <ClCompile Include="program.cpp" />
   </ItemGroup>
   <ItemGroup>

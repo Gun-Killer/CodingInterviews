@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int main()
+int main007()
 {
     string str = "12345678";
 
