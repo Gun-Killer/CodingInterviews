@@ -6,7 +6,7 @@
 
 using namespace std;
 
-int main()
+int main008()
 {
     vector<int> v;
     for (int i = 0; i < 10; i++)
