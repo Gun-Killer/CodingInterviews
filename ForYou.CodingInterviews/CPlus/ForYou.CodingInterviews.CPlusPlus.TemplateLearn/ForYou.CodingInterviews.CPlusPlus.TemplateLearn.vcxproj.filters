@@ -48,6 +48,9 @@
     <ClCompile Include="010.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="011List.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TemplateClass.hpp">

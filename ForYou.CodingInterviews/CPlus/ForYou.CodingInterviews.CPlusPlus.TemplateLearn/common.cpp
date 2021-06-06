@@ -2,6 +2,7 @@
 #include <iostream>
 #include <vector>
 #include <deque>
+#include <list>
 #include <string>
 
 using namespace std;
@@ -31,3 +32,18 @@ void loopOutput(const deque<T>& input)
 
     cout << "********************************" << endl;
 }
+
+template<typename T>
+void loopOutput(const list<T>& input)
+{
+    typename list<T>::const_iterator begin = input.begin();
+    do
+    {
+        cout << "\t" << *begin;
+        begin++;
+    } while (begin != input.end());
+    cout << endl;
+
+    cout << "********************************" << endl;
+}
+
