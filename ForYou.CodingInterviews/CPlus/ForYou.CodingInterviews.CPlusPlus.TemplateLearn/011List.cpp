@@ -35,5 +35,10 @@ int main()
     p7.assign(5, 12);
     loopOutput(p7);
 
+    p.swap(p7);
+
+    loopOutput(p);
+    loopOutput(p7);
+
     return 0;
 }
