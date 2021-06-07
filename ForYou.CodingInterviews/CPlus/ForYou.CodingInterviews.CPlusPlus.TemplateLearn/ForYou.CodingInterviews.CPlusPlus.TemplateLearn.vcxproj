@@ -149,6 +149,7 @@
     <ClCompile Include="009Deque.cpp" />
     <ClCompile Include="010.cpp" />
     <ClCompile Include="011List.cpp" />
+    <ClCompile Include="012ListSort.cpp" />
     <ClCompile Include="common.cpp" />
     <ClCompile Include="program.cpp" />
   </ItemGroup>
