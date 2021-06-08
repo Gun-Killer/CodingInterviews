@@ -24,7 +24,7 @@ bool listItemObjectSort(ListItemObject & p1, ListItemObject&p2)
     return p1.m_num1 < p2.m_num1;
 }
 
-int main()
+int main0012()
 {
     list< ListItemObject> p;
     srand(time(NULL));
