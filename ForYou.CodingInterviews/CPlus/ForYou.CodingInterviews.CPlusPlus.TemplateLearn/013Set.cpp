@@ -28,5 +28,13 @@ int main()
 
     set<int> p2 = p;
 
+
+    if (p.find(010) != p.end())//表示该数据存在
+    {
+        cout << "exist" << endl;
+    }
+
+    cout << p.count(1000) << endl;
+
     return 0;
 }
