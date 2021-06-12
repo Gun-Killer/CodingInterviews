@@ -151,7 +151,8 @@
     <ClCompile Include="011List.cpp" />
     <ClCompile Include="012ListSort.cpp" />
     <ClCompile Include="013Set.cpp" />
-    <ClCompile Include="14Map.cpp" />
+    <ClCompile Include="014Map.cpp" />
+    <ClCompile Include="015.cpp" />
     <ClCompile Include="common.cpp" />
     <ClCompile Include="program.cpp" />
   </ItemGroup>
