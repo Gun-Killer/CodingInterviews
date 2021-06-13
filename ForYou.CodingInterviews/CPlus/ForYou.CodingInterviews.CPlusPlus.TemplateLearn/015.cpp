@@ -1,4 +1,5 @@
 #include <iostream>
+#include <functional>
 
 using namespace std;
 
@@ -20,7 +21,7 @@ public:
     }
 };
 
-int main()
+int main015()
 {
     MethodObject obj;
     srand(time(NULL));
