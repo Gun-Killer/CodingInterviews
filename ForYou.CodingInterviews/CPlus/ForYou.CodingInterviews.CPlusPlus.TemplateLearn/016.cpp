@@ -5,7 +5,20 @@
 
 using namespace std;
 
+class FindObject
+{
+public:
+    bool operator()(int& input)
+    {
+        return input > 6;
+    }
+};
 
+
+void print(const int& input)
+{
+    cout << input << endl;
+}
 int main()
 {
     vector<int> p;
@@ -21,6 +34,11 @@ int main()
     {
         cout << "\t" << p[i];
     }
+    cout << endl;
 
+    cout << (find(p.begin(), p.end(), 10) == p.end()) << endl;
+
+    auto find_res = find_if(p.begin(), p.end(), FindObject());
+    cout << *find_res << endl;
     return 0;
 }
