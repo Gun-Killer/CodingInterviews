@@ -6,7 +6,10 @@
         xmlns:local="clr-namespace:ForYou.CodingInterviews.WPF001"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10">
-        <Button Click="AttachedWindowBtnClicked">附件方法</Button>
+    <Grid >
+        <StackPanel>
+            <Button Click="AttachedWindowBtnClicked">附件方法</Button>
+            <Button Click="Button_Click">KeyTest</Button>
+        </StackPanel>
     </Grid>
 </Window>

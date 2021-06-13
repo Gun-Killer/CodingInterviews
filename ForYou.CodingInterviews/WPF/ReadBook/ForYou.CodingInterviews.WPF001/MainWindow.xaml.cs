@@ -31,5 +31,10 @@ namespace ForYou.CodingInterviews.WPF001
             AttachedEventWindow attachedMethodWindow = new AttachedEventWindow();
             attachedMethodWindow.Show();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new KeyWindow().Show();
+        }
     }
 }
