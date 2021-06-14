@@ -19,6 +19,15 @@ void print(const int& input)
 {
     cout << input << endl;
 }
+
+class CountIfObject
+{
+public:
+    bool operator()(int& num1, int& num2)
+    {
+
+    }
+};
 int main()
 {
     vector<int> p;
@@ -40,5 +49,7 @@ int main()
 
     auto find_res = find_if(p.begin(), p.end(), FindObject());
     cout << *find_res << endl;
+
+    cout << count_if(p.begin(), p.end(), FindObject()) << endl;
     return 0;
 }
