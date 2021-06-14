@@ -36,5 +36,15 @@ namespace ForYou.CodingInterviews.WPF001
         {
             new KeyWindow().Show();
         }
+
+        private void Buton_Click_1(object sender, RoutedEventArgs e)
+        {
+            new MouseWindow().Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            new MouseDragWindow().Show();
+        }
     }
 }

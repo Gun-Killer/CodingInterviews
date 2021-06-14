@@ -18,3 +18,4 @@ StackPanel 下的所有button 点击都会触发StackPanel_Click 事件。Click�
     子元素的initialized事件执行完成之后，执行包含它元素的initialized事件
     上层Loaded事件先执行
     每次只能使用一个控件，接受按键是具有焦点的控件
+    Vs 执行直接运行无法进行Drop事件

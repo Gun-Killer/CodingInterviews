@@ -10,6 +10,8 @@
         <StackPanel>
             <Button Click="AttachedWindowBtnClicked">附件方法</Button>
             <Button Click="Button_Click">KeyTest</Button>
+            <Button Click="Buton_Click_1">MouseTest</Button>
+            <Button Click="Button_Click_1">DragTest</Button>
         </StackPanel>
     </Grid>
 </Window>
