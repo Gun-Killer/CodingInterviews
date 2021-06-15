@@ -28,7 +28,7 @@ public:
 
     }
 };
-int main()
+int main016()
 {
     vector<int> p;
 
