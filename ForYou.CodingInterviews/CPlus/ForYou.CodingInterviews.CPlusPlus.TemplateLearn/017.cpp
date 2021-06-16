@@ -4,7 +4,7 @@
 using namespace std;
 
 
-int main()
+int main017()
 {
     srand(time(NULL));
     vector<int> p;
