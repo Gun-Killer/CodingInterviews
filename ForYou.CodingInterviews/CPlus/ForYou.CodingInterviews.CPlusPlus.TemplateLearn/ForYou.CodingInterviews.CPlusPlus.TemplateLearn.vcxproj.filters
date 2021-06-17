@@ -72,6 +72,9 @@
     <ClCompile Include="018.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="019.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="TemplateClass.hpp">

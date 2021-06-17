@@ -13,7 +13,7 @@ public :
     }
 };
 
-int main()
+int main018()
 {
     vector<int> p;
     p.push_back(1);
