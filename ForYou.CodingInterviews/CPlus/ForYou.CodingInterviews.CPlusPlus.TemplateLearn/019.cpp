@@ -13,6 +13,8 @@ int main()
         v.push_back(i);
     }
 
+
+
     cout << accumulate(v.begin(), v.end(), 0) << endl;
     return 0;
 }
