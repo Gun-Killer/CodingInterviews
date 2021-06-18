@@ -5,7 +5,7 @@
 using namespace std;
 
 
-int main()
+int main019()
 {
     vector<int> v;
     for (int i = 0; i < 101; i++)
