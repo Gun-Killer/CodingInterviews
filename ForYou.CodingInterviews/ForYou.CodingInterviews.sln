@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31025.194
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31410.414
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.LeeCode", "ForYou.CodingInterviews.LeeCode\ForYou.CodingInterviews.LeeCode.csproj", "{551717F9-134A-441F-9E35-4C65E7AD393B}"
 EndProject
@@ -51,11 +51,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.CPl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReadBook", "ReadBook", "{DF5B5EA9-39E8-4CF5-93BD-135717271848}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.WPF001", "WPF\ReadBook\ForYou.CodingInterviews.WPF001\ForYou.CodingInterviews.WPF001.csproj", "{815FA115-F2CB-4BF0-AC81-EC11A458C1EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.WPF001", "WPF\ReadBook\ForYou.CodingInterviews.WPF001\ForYou.CodingInterviews.WPF001.csproj", "{815FA115-F2CB-4BF0-AC81-EC11A458C1EA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{6B2EDAEA-CF38-468F-8B8F-2394C1FEF5F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.Extension", "Common\ForYou.CodingInterviews.Extension\ForYou.CodingInterviews.Extension.csproj", "{AC1DCF4B-B3FF-43FE-A1CB-5C57D334A08C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.Extension", "Common\ForYou.CodingInterviews.Extension\ForYou.CodingInterviews.Extension.csproj", "{AC1DCF4B-B3FF-43FE-A1CB-5C57D334A08C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.CPlusPlus.SpeechContest", "CPlus\ForYou.CodingInterviews.CPlusPlus.SpeechContest\ForYou.CodingInterviews.CPlusPlus.SpeechContest.vcxproj", "{329DAFB6-7FA2-4A8E-852C-6175BD917B26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -295,6 +297,16 @@ Global
 		{AC1DCF4B-B3FF-43FE-A1CB-5C57D334A08C}.Release|x64.Build.0 = Release|Any CPU
 		{AC1DCF4B-B3FF-43FE-A1CB-5C57D334A08C}.Release|x86.ActiveCfg = Release|Any CPU
 		{AC1DCF4B-B3FF-43FE-A1CB-5C57D334A08C}.Release|x86.Build.0 = Release|Any CPU
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26}.Debug|x64.ActiveCfg = Debug|x64
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26}.Debug|x64.Build.0 = Debug|x64
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26}.Debug|x86.ActiveCfg = Debug|Win32
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26}.Debug|x86.Build.0 = Debug|Win32
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26}.Release|Any CPU.ActiveCfg = Release|Win32
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26}.Release|x64.ActiveCfg = Release|x64
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26}.Release|x64.Build.0 = Release|x64
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26}.Release|x86.ActiveCfg = Release|Win32
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -322,6 +334,7 @@ Global
 		{DF5B5EA9-39E8-4CF5-93BD-135717271848} = {338AA266-6972-48AD-847A-117DBBE578E9}
 		{815FA115-F2CB-4BF0-AC81-EC11A458C1EA} = {DF5B5EA9-39E8-4CF5-93BD-135717271848}
 		{AC1DCF4B-B3FF-43FE-A1CB-5C57D334A08C} = {6B2EDAEA-CF38-468F-8B8F-2394C1FEF5F9}
+		{329DAFB6-7FA2-4A8E-852C-6175BD917B26} = {0D636A4E-F199-4692-9F64-50AB365B19DB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A27EAF7D-BA4C-47B7-B9ED-8E31D9E99FEA}
