@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <fstream>
 
 using namespace std;
 
@@ -54,6 +55,8 @@ void SpeechManager::start()
     sort(m_v3.begin(), m_v3.end());
     cout << "µÚÒ»Ãû" << endl;
     cout << "\t" << m_v3[1] << "\t" << m_map[m_v3[1]].m_name << "\t" << m_map[m_v3[1]].m_score[m_index - 1] << endl;
+
+    saveFile();
     system("pause");
 }
 
@@ -146,6 +149,18 @@ double SpeechManager::newScore()
     score.pop_front();
 
     return accumulate(score.begin(), score.end(), 0.0) / score.size();
+}
+
+void SpeechManager::saveFile()
+{
+    ofstream file;
+    file.open("123.csv", ios::out | ios::app);
+    for (auto begin = m_v3.begin(); begin != m_v3.end(); begin++)
+    {
+        auto& temp = m_map[*begin];
+        file << temp.m_name << "," << temp.m_score[1] << endl;
+    }
+    file.close();
 }
 
 SpeechManager::~SpeechManager()

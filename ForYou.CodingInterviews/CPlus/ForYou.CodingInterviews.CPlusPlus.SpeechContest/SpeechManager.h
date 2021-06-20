@@ -42,5 +42,7 @@ private:
     void scoring();
 
     double newScore();
+
+    void saveFile();
 };
 

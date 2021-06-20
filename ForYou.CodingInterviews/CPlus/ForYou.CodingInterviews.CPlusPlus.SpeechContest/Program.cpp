@@ -6,10 +6,10 @@ using std::cout;
 
 int main()
 {
-    SpeechManager speedManager;
 
     while (true)
     {
+        SpeechManager speedManager;
         speedManager.showMenu();
 
         cout << "ÇëÑ¡Ôñ" << std::endl;
