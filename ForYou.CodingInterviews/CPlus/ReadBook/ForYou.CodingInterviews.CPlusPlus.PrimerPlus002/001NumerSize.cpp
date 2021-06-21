@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int main()
+int main001()
 {
     cout << "Windows x64" << endl;//
     cout << "\tchar:\t" << sizeof(char) << endl;//1

@@ -15,8 +15,14 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="002DefineVariables.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="001NumerSize.cpp">
-      <Filter>Resource Files</Filter>
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="003.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
