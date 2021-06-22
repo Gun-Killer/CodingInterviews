@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int main004()
 {
     float num1 = 10.6e20f;
 
