@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int main003()
 {
     int num1 = 42;
     int num2 = 0x42;
@@ -16,4 +16,5 @@ int main()
     cout << "十进制" << num1 << endl;
     cout << "十六进制" << hex << num2 << endl;
     cout << "8进制" << oct << num3 << endl;
+    return 0;
 }
