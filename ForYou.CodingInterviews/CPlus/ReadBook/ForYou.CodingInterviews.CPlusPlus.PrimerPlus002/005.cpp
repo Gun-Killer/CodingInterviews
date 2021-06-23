@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int main()
+int main005()
 {
     char c = 'Q';
     cout << int(c) << endl;
