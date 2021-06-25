@@ -18,5 +18,8 @@
     <ClCompile Include="001.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="002string.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
