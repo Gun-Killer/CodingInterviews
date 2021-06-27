@@ -19,27 +19,25 @@ namespace ForYou.CodingInterviews.AccountViewModel.Commands
         private async Task AddRecord(object? record)
         {
             var model = record as MainWindowViewModel;
-            if (model == null ||
-                model.SelectedUser == null
-                || model.Amount <= 0
-                || Math.Round(model.Amount, 2) != model.Amount)
+            if (model == null)
             {
                 return;
             }
             var recordRepository = AccountServiceProvider.Instance.GetService<IRecordModelRepository>();
             var recordUserRepository = AccountServiceProvider.Instance.GetService<IRecordUserModelRepository>();
 
+            var time_now = DateTime.Now;
             var addRecord = new RecordModel
             {
                 Amount = model.Amount,
                 CategoryId = 1L,
                 BookId = 1L,
-                CreatedById = 1L,
-                RecordTime = DateTime.Now,
+                CreatedById = model.SeletedCategory.Id,
+                RecordTime = model.RecordTime.AddHours(time_now.Hour).AddMinutes(time_now.Minute).AddSeconds(time_now.Second),
                 UpdatedById = 1L,
-                CreatedBy = "阿甘",
-                UpdatedBy = "阿甘",
-                Remark = "Account"
+                CreatedBy = "admin",
+                UpdatedBy = "admin",
+                Remark = model.Remark ?? string.Empty
             };
             await recordRepository.AddAsync(addRecord);
 
@@ -52,20 +50,25 @@ namespace ForYou.CodingInterviews.AccountViewModel.Commands
                     UserName = model.SelectedUser.Name,
                     CreatedById = 1L,
                     UpdatedById = 1L,
-                    CreatedBy = "阿甘",
-                    UpdatedBy = "阿甘"
+                    CreatedBy = "admin",
+                    UpdatedBy = "admin"
                 }
 
             });
 
             await recordRepository.SaveAsync();
+
+            model.Reset();
         }
 
         public override bool CanExecute(object? parameter)
         {
             return parameter != null
                 && (parameter is MainWindowViewModel model)
-
+                && model.SelectedUser != null
+                && model.Amount > 0M
+                && Math.Round(model.Amount, 2) == model.Amount
+                && model.SeletedCategory != null
                 && base.CanExecute(parameter);
         }
     }

@@ -12,6 +12,7 @@ namespace ForYou.CodingInterviews.AccountModel.ModelConfig
         public static EntityTypeBuilder<T> BaseBuild<T>(this EntityTypeBuilder<T> builder)
             where T : class, IModel
         {
+            builder.HasKey(t => t.Id);
             //builder.Property(t => t.CreatedTime).ValueGeneratedOnAdd();
             //builder.Property(t => t.UpdatedTime).ValueGeneratedOnAddOrUpdate();
             return builder;

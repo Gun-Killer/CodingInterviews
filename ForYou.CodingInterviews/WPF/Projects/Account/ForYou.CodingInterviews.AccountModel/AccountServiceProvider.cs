@@ -26,6 +26,7 @@ namespace ForYou.CodingInterviews.AccountModel
             services.AddScoped<IUserModelRepository, UserModelRepository>();
             services.AddScoped<IRecordModelRepository, RecordModelRepository>();
             services.AddScoped<IRecordUserModelRepository, RecordUserModelRepository>();
+            services.AddScoped<ICategoryModelRepository, CategoryModelRepository>();
 
             _provider = services.BuildServiceProvider();
             Instance = new AccountServiceProvider();

@@ -10,7 +10,7 @@ using ForYou.CodingInterviews.AccountViewModel.Commands;
 
 namespace ForYou.CodingInterviews.AccountViewModel
 {
-    public class MainWindowViewModel
+    public class MainWindowViewModel : ViewModelBase
     {
         public MainWindowViewModel()
         {
@@ -23,6 +23,10 @@ namespace ForYou.CodingInterviews.AccountViewModel
             AddCommand = new AddNewRecordAsyncCommand();
         }
         public decimal Amount { get; set; }
+
+        public string Remark { get; set; }
+
+        public DateTime RecordTime { get; set; } = DateTime.Now;
 
         public NotifyTaskCompletion<ObservableCollection<UserItem>> Users { get; set; }
 
@@ -39,6 +43,22 @@ namespace ForYou.CodingInterviews.AccountViewModel
         public UserItem SelectedUser { get; set; }
 
 
+        public CategoryItem SeletedCategory { get; set; }
+
         public AddNewRecordAsyncCommand AddCommand { get; set; }
+
+        internal void Reset()
+        {
+            Remark = string.Empty;
+            Amount = 0m;
+            SelectedUser = null;
+            SeletedCategory = null;
+            RecordTime = DateTime.Now;
+            OnPropertyChanged(nameof(RecordTime));
+            OnPropertyChanged(nameof(Amount));
+            OnPropertyChanged(nameof(Remark));
+            OnPropertyChanged(nameof(SelectedUser));
+            OnPropertyChanged(nameof(SeletedCategory));
+        }
     }
 }

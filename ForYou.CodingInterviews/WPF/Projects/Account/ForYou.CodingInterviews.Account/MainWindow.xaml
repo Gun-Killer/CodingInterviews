@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ForYou.CodingInterviews.Account"
         xmlns:ViewModel="clr-namespace:ForYou.CodingInterviews.AccountViewModel;assembly=ForYou.CodingInterviews.AccountViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800">
+        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800" Name="AccountWindow">
     <Window.DataContext>
         <ViewModel:MainWindowViewModel/>
     </Window.DataContext>
@@ -19,25 +19,49 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"></RowDefinition>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
+                <RowDefinition Height="auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="40"></RowDefinition>
             </Grid.RowDefinitions>
             <DockPanel  Margin="5" HorizontalAlignment="Stretch" >
                 <Label>金额</Label>
-                <TextBox Margin="5,0,0,0" VerticalContentAlignment="Center" Text="{Binding Amount,Mode=TwoWay}"></TextBox>
+                <TextBox Margin="5,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Text="{Binding Amount,Mode=TwoWay}"></TextBox>
             </DockPanel>
-            <ListView Grid.Row="1" ItemsSource="{Binding Users.Result}" SelectedItem="{Binding SelectedUser}">
-                <ListView.ItemTemplate>
+            <ComboBox Grid.Row="1" ItemsSource="{Binding Users.Result}" SelectedItem="{Binding SelectedUser}" Height="30" VerticalContentAlignment="Center">
+                <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <DockPanel>
                             <Label Content="{Binding Id}"></Label>
                             <Label Content="{Binding Name}"></Label>
                         </DockPanel>
                     </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <ListView x:Name="account_categories" ItemsSource="{Binding Categories.Result}" SelectedItem="{Binding DataContext.SeletedCategory,ElementName=AccountWindow}" Grid.Row="2">
+                <ListView.DataContext>
+                    <ViewModel:CategoryViewModel/>
+                </ListView.DataContext>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Label Content="{Binding Name}"></Label>
+                    </DataTemplate>
                 </ListView.ItemTemplate>
+                <ListView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal"></WrapPanel>
+                    </ItemsPanelTemplate>
+                </ListView.ItemsPanel>
             </ListView>
-            <Grid Grid.Row="3" Margin="5">
+            <DatePicker Grid.Row="3" SelectedDate="{Binding RecordTime, Mode=TwoWay}">
+                
+            </DatePicker>
+            <DockPanel  Margin="5" HorizontalAlignment="Stretch" Grid.Row="4">
+                <Label>备注</Label>
+                <TextBox Margin="5,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Text="{Binding Remark,Mode=TwoWay}"></TextBox>
+            </DockPanel>
+            <Grid Grid.Row="5" Margin="5">
                 <Button Command="{Binding AddCommand}" CommandParameter="{Binding}">添加</Button>
             </Grid>
         </Grid>
