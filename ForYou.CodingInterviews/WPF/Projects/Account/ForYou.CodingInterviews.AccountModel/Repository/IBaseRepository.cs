@@ -7,7 +7,6 @@ namespace ForYou.CodingInterviews.AccountModel.Repository
 {
     public interface IBaseRepository<T> where T : class, IModel
     {
-        protected DbSet<T> Model { get; }
         ValueTask<bool> AddAsync(T model, CancellationToken cancelToken = default);
 
         ValueTask<bool> AddRangeAsync(IEnumerable<T> models,CancellationToken cancelToken = default);

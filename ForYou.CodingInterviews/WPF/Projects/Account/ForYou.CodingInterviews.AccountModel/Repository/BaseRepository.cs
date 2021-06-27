@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using ForYou.CodingInterviews.AccountModel.Common;
@@ -19,7 +20,7 @@ namespace ForYou.CodingInterviews.AccountModel.Repository
 
         protected DbSet<T> Model => _db.Set<T>();
 
-        DbSet<T> IBaseRepository<T>.Model => throw new NotImplementedException();
+        protected IQueryable<T> ModelNoTacking => _db.Set<T>().AsNoTracking();
 
         public async ValueTask<bool> AddAsync(T model, CancellationToken cancelToken = default)
         {

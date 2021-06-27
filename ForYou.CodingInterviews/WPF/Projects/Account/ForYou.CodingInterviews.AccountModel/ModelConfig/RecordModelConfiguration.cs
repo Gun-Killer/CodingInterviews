@@ -16,6 +16,7 @@ namespace ForYou.CodingInterviews.AccountModel.ModelConfig
 
             builder.HasKey(t => t.Id);
 
+            builder.Property(t => t.Remark).IsRequired(false);
             builder.BaseBuild();
         }
     }

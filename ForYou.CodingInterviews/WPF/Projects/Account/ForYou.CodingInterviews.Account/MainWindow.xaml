@@ -66,8 +66,24 @@
             </Grid>
         </Grid>
         <GridSplitter Grid.Column="1" Background="Red" BorderBrush="Red" Width="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></GridSplitter>
-        <Grid Grid.Column="2" Background="Aqua" MinWidth="400">
-
+        <Grid Grid.Column="2" Background="Aqua" MinWidth="400" x:Name="RecordGrid">
+            <Grid.DataContext>
+                <ViewModel:RecordViewModel/>
+            </Grid.DataContext>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <DataGrid Grid.Row="1" ItemsSource="{Binding Records.Result}" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="序号" Width="120" Binding="{Binding Id}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="日期" Width="120" Binding="{Binding RecordTime,StringFormat='yyyy-MM-dd HH:mm:ss'}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="金额" Width="80" Binding="{Binding Amount,StringFormat='0.##'}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="分类" Width="80" Binding="{Binding CategoryName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="人员" Width="80" Binding="{Binding UserName}"></DataGridTextColumn>
+                </DataGrid.Columns>
+                
+            </DataGrid>
         </Grid>
     </Grid>
 </Window>
