@@ -17,5 +17,7 @@ namespace ForYou.CodingInterviews.AccountViewModel
         public DateTime RecordTime { get; set;  }
 
         public string UserName { get; set; }
+
+        public string Remark { get; set; }
     }
 }

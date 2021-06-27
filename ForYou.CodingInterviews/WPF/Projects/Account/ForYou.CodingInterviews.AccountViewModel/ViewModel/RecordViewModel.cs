@@ -14,6 +14,7 @@ namespace ForYou.CodingInterviews.AccountViewModel
         public RecordViewModel()
         {
             Records = new NotifyTaskCompletion<ObservableCollection<RecordItem>>(GetRecords());
+            ViewModelSyncDataManager.AddViewModel(this);
         }
 
         public NotifyTaskCompletion<ObservableCollection<RecordItem>> Records { get; set; }
@@ -27,8 +28,16 @@ namespace ForYou.CodingInterviews.AccountViewModel
                 CategoryName = t.CategoryId.ToString(),
                 Id = t.Id,
                 RecordTime = t.RecordTime,
-                UserName = string.Empty
+                UserName = string.Empty,
+                Remark = t.Remark
             }));
+        }
+
+       
+        public void SyncNewRecord()
+        {
+            Records = new NotifyTaskCompletion<ObservableCollection<RecordItem>>(GetRecords());
+            OnPropertyChanged(nameof(Records));
         }
     }
 }

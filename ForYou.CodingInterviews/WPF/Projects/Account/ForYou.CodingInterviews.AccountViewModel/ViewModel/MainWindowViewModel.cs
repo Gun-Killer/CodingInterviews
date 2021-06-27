@@ -21,6 +21,8 @@ namespace ForYou.CodingInterviews.AccountViewModel
                 );
 
             AddCommand = new AddNewRecordAsyncCommand();
+
+            ViewModelSyncDataManager.AddViewModel(this);
         }
         public decimal Amount { get; set; }
 

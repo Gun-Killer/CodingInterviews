@@ -10,10 +10,11 @@ namespace ForYou.CodingInterviews.AccountViewModel.Commands
 {
     public sealed class AddNewRecordAsyncCommand : AsyncCommandBase
     {
-
+        AddRecordTracker _tracker;
         public AddNewRecordAsyncCommand()
         {
             _async_func = AddRecord;
+            _tracker = new AddRecordTracker();
         }
 
         private async Task AddRecord(object? record)
@@ -59,6 +60,7 @@ namespace ForYou.CodingInterviews.AccountViewModel.Commands
             await recordRepository.SaveAsync();
 
             model.Reset();
+            _tracker.Notice(model);
         }
 
         public override bool CanExecute(object? parameter)

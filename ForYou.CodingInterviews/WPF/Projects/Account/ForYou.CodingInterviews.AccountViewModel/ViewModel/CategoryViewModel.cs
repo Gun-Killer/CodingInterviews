@@ -15,6 +15,7 @@ namespace ForYou.CodingInterviews.AccountViewModel
         {
 
             Categories = new NotifyTaskCompletion<ObservableCollection<CategoryItem>>(GetCategories());
+            ViewModelSyncDataManager.AddViewModel(this);
         }
         public NotifyTaskCompletion<ObservableCollection<CategoryItem>> Categories { get; set; }
 

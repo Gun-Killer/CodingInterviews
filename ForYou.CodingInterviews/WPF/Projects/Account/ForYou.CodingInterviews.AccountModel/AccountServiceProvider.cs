@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using ForYou.CodingInterviews.AccountModel.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,10 +19,15 @@ namespace ForYou.CodingInterviews.AccountModel
         public static void Init()
         {
             ServiceCollection services = new ServiceCollection();
+            var dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Resource\DB");
+            if(Directory.Exists(dbPath) == false)
+            {
+                Directory.CreateDirectory(dbPath);
+            }
 
             services.AddDbContextPool<AccountDBContext>(options =>
             {
-                options.UseSqlite(@"Data Source=..\..\..\..\Resource\DB\Account.db;");
+                options.UseSqlite(@"Data Source=Resource\DB\Account.db;");
             });
             services.AddScoped<IUserModelRepository, UserModelRepository>();
             services.AddScoped<IRecordModelRepository, RecordModelRepository>();
