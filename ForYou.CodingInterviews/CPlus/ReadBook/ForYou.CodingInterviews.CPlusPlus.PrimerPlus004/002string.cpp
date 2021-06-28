@@ -2,7 +2,15 @@
 #include <iostream>
 using namespace std;
 
-int main()
+
+void test2()
+{
+    cout << "---------------" << endl;
+
+    cout << R"(\n)" << endl;
+    cout << R"+*("""(\n)+*" << endl;
+}
+int main002()
 {
     char str1[8] = { '1','2','3','4','5','6','7','8' };// not a string
     char str2[8] = { '1','2','3','4','5','6','7','\0' };
@@ -19,6 +27,9 @@ int main()
     cout << strlen(str2) << endl;
     cout << strlen(str3) << endl;
     cout << str4.length() << endl;
+
+
+    test2();
 
     return 0;
 }
