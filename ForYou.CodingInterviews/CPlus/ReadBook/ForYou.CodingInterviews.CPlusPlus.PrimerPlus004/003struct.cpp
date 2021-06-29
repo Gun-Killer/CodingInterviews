@@ -7,7 +7,7 @@ struct Inflatable
     float volume;
     double price;
 };
-int main()
+int main003()
 {
 
     Inflatable guest
