@@ -10,7 +10,7 @@ enum ColorEnum
     orange = 4
 };
 
-int main()
+int main005()
 {
     ColorEnum p;
 

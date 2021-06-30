@@ -30,5 +30,8 @@
     <ClCompile Include="005enum.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="006pointer.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
