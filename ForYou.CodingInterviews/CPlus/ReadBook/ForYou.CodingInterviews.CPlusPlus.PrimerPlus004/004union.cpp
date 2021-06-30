@@ -9,7 +9,7 @@ union IdUnion
     int m_int;
 };
 
-int main()
+int main004()
 {
     IdUnion p;
     p.m_long = 1000000;

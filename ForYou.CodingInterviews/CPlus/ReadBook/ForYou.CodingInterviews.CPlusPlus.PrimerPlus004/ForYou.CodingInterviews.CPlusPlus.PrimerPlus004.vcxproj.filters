@@ -27,5 +27,8 @@
     <ClCompile Include="004union.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="005enum.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
