@@ -3,7 +3,7 @@
 using namespace std;
 
 
-int main()
+int main006()
 {
     int nights = 1001;
     int* pt = new int;
