@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ForYou.CodingInterviews.Account.Windows;
 
 namespace ForYou.CodingInterviews.Account
 {
@@ -23,6 +24,14 @@ namespace ForYou.CodingInterviews.Account
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void ModePaymentManagementClicked(object sender, RoutedEventArgs e)
+        {
+            ModePaymentWindow modePaymentWindow = new ModePaymentWindow();
+            modePaymentWindow.Owner = this;
+            modePaymentWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
+            modePaymentWindow.Show();
         }
     }
 }

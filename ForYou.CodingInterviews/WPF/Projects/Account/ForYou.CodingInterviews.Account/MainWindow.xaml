@@ -6,17 +6,27 @@
         xmlns:local="clr-namespace:ForYou.CodingInterviews.Account"
         xmlns:ViewModel="clr-namespace:ForYou.CodingInterviews.AccountViewModel;assembly=ForYou.CodingInterviews.AccountViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800" Name="AccountWindow">
+        Title="MainWindow" Height="450" Width="800" MinHeight="450" MinWidth="800" Name="AccountWindow" WindowStartupLocation="CenterScreen">
     <Window.DataContext>
         <ViewModel:MainWindowViewModel/>
     </Window.DataContext>
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="1*" MinWidth="250"></ColumnDefinition>
             <ColumnDefinition Width="10"></ColumnDefinition>
             <ColumnDefinition Width="3*" MinWidth="400"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Grid>
+        <Menu Grid.Row="0" Grid.ColumnSpan="3">
+            <MenuItem Header="数据维护">
+                <MenuItem Header="支付方式" Click="ModePaymentManagementClicked"></MenuItem>
+            </MenuItem>
+        </Menu>
+        
+        <Grid Grid.Row="1">
             <Grid.RowDefinitions>
                 <RowDefinition Height="40"></RowDefinition>
                 <RowDefinition Height="auto"></RowDefinition>
@@ -65,8 +75,8 @@
                 <Button Command="{Binding AddCommand}" CommandParameter="{Binding}">添加</Button>
             </Grid>
         </Grid>
-        <GridSplitter Grid.Column="1" Background="Red" BorderBrush="Red" Width="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></GridSplitter>
-        <Grid Grid.Column="2" Background="Aqua" MinWidth="400" x:Name="RecordGrid">
+        <GridSplitter Grid.Row="1" Grid.Column="1" Background="Red" BorderBrush="Red" Width="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></GridSplitter>
+        <Grid Grid.Row="1" Grid.Column="2" Background="Aqua" MinWidth="400" x:Name="RecordGrid">
             <Grid.DataContext>
                 <ViewModel:RecordViewModel/>
             </Grid.DataContext>

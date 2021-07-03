@@ -30,6 +30,8 @@ namespace ForYou.CodingInterviews.AccountModel.Repository
             }
             model.CreatedTime = DateTime.Now;
             model.UpdatedTime = DateTime.Now;
+            model.CreatedBy = "Admin";
+            model.UpdatedBy = "Admin";
             await Model.AddAsync(model, cancelToken);
             return true;
         }
