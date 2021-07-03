@@ -10,7 +10,7 @@ namespace ForYou.CodingInterviews.AccountViewModel
     {
         public void OnCompleted()
         {
-            ViewModelSyncDataManager.GetViewModel<RecordViewModel>().SyncNewRecord();
+            ViewModelSyncDataManager.GetViewModel<RecordViewModel>()?.SyncNewRecord();
         }
 
         public void OnError(Exception error)

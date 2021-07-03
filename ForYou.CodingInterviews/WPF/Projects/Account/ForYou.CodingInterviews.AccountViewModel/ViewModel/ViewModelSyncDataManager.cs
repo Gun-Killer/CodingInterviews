@@ -12,16 +12,20 @@ namespace ForYou.CodingInterviews.AccountViewModel
 
         public static void AddViewModel(ViewModelBase viewModel)
         {
-            if(viewModel== null)
+            if (viewModel == null)
             {
                 return;
             }
             _viewModelsDic[viewModel.GetType()] = viewModel;
         }
 
-        public static T GetViewModel<T>()
-            where T: ViewModelBase
+        public static T? GetViewModel<T>()
+            where T : ViewModelBase
         {
+            if (_viewModelsDic.ContainsKey(typeof(T)) == false)
+            {
+                return default;
+            }
             return (T)_viewModelsDic[typeof(T)];
         }
     }

@@ -34,5 +34,16 @@ namespace ForYou.CodingInterviews.Account.Windows
             }
             _selectedIndex = lb.SelectedIndex;
         }
+
+        int _accountSelectedIndex = -1;
+        private void AccountPaymentLBMouseLeftClick(object sender, MouseButtonEventArgs e)
+        {
+            var lb = sender as ListBox;
+            if (lb.SelectedIndex == _accountSelectedIndex)
+            {
+                lb.SelectedItem = null;
+            }
+            _accountSelectedIndex = lb.SelectedIndex;
+        }
     }
 }

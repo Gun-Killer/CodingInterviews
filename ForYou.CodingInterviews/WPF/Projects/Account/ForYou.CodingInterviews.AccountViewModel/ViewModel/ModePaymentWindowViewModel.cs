@@ -14,10 +14,13 @@ namespace ForYou.CodingInterviews.AccountViewModel
     {
         public ModePaymentWindowViewModel()
         {
-            _modePaymentInfo = new ModePaymentInfoViewModel();
+            ModePaymentInfo = new ModePaymentInfoViewModel();
+            AccountPaymentInfo = new AccountPaymentViewModel();
+            ViewModelSyncDataManager.AddViewModel(this);
         }
 
         private ModePaymentInfoViewModel _modePaymentInfo;
+        private AccountPaymentViewModel _accountPaymentInfo;
 
         public ModePaymentInfoViewModel ModePaymentInfo
         {
@@ -28,6 +31,52 @@ namespace ForYou.CodingInterviews.AccountViewModel
                 OnPropertyChanged(nameof(ModePaymentInfo));
             }
         }
+
+
+
+        public AccountPaymentViewModel AccountPaymentInfo
+        {
+            get => _accountPaymentInfo;
+            set
+            {
+                _accountPaymentInfo = value;
+                OnPropertyChanged(nameof(AccountPaymentInfo));
+            }
+        }
+
+
+        public async ValueTask UpdateModeBindingShow()
+        {
+            var accounts = this.AccountPaymentInfo.Items.Result;
+            if (accounts == null)
+            {
+                return;
+            }
+            var repository = AccountServiceProvider.Instance.GetService<IModePaymentWithAccountModelRepository>();
+            HashSet<long> ids = new HashSet<long>();
+
+            if (this.ModePaymentInfo.Seleted != null)
+            {
+                ids = (await repository.GetByModeIdsAsync(new[] { this.ModePaymentInfo.Seleted.Id }))
+                    .Select(t => t.AccountId)
+                    .ToHashSet();
+            }
+
+            foreach (var account in accounts)
+            {
+                if (ids.Contains(account.Id))
+                {
+                    account.BtnName = "解绑";
+                }
+                else
+                {
+                    account.BtnName = "绑定";
+                }
+            }
+
+            OnPropertyChanged(nameof(this.AccountPaymentInfo));
+        }
+
     }
 
 
@@ -85,6 +134,8 @@ namespace ForYou.CodingInterviews.AccountViewModel
                     ModePaymentBtnName = "更新";
                     ModePaymentName = value.Name;
                 }
+                OnPropertyChanged(nameof(Seleted));
+                ViewModelSyncDataManager.GetViewModel<ModePaymentWindowViewModel>()?.UpdateModeBindingShow();
             }
         }
 

@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:ForYou.CodingInterviews.Account.Windows"
         xmlns:ViewModel="clr-namespace:ForYou.CodingInterviews.AccountViewModel;assembly=ForYou.CodingInterviews.AccountViewModel"
         mc:Ignorable="d"
-        Title="ModePaymentWindow" Height="450" Width="800">
+        Title="ModePaymentWindow" Height="450" Width="800" Name="ModePaymentWindowName">
     <Window.DataContext>
         <ViewModel:ModePaymentWindowViewModel/>
     </Window.DataContext>
-    <Grid>
+    <Grid VerticalAlignment="Stretch">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
+            <ColumnDefinition Width="1*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <StackPanel Grid.Column="0">
             <Grid Margin="5">
@@ -22,11 +22,11 @@
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition Width="auto"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Label Margin="0,0,5,0">支付方式</Label>
+                <Label Margin="0,0,5,0" VerticalContentAlignment="Center">支付方式</Label>
                 <TextBox Grid.Column="1" VerticalContentAlignment="Center" Text="{Binding ModePaymentInfo.ModePaymentName, Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"></TextBox>
-                <Button Grid.Column="2" Content="{Binding ModePaymentInfo.ModePaymentBtnName}" Margin="5,0,0,0" Command="{Binding ModePaymentInfo.SyncModePaymentCommand}" CommandParameter="{Binding}"></Button>
+                <Button Grid.Column="2" Content="{Binding ModePaymentInfo.ModePaymentBtnName}" Margin="5,0,0,0" Command="{Binding ModePaymentInfo.SyncModePaymentCommand}" CommandParameter="{Binding}" Width="60"></Button>
             </Grid>
-            <ListBox ItemsSource="{Binding ModePaymentInfo.Items.Result,IsAsync=True}" SelectedItem="{Binding ModePaymentInfo.Seleted}" MouseLeftButtonUp="ModePaymentLBMouseLeftClick">
+            <ListBox ItemsSource="{Binding ModePaymentInfo.Items.Result,IsAsync=True}" SelectedItem="{Binding ModePaymentInfo.Seleted,IsAsync=True}" MouseLeftButtonUp="ModePaymentLBMouseLeftClick">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
@@ -38,8 +38,39 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </StackPanel>
-        <ListBox Grid.Column="1">
-
-        </ListBox>
+        <StackPanel Grid.Column="1" >
+            <Grid Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Margin="0,0,5,0">
+                    支付账户
+                </Label>
+                <TextBox Grid.Column="1" Text="{Binding AccountPaymentInfo.AccountPaymentName ,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
+                <Button Grid.Column="2" Width="60" Margin="5,0,0,0" Content="{Binding AccountPaymentInfo.AccountPaymentBtnName}" Command="{Binding AccountPaymentInfo.SyncAccountPaymentCommand}" CommandParameter="{Binding}"></Button>
+            </Grid>
+            <ListBox ItemsSource="{Binding AccountPaymentInfo.Items.Result, IsAsync=True}" HorizontalContentAlignment="Stretch" SelectedItem="{Binding AccountPaymentInfo.Selected}" MouseLeftButtonUp="AccountPaymentLBMouseLeftClick" Name="accountPaymentLB">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="52"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <DockPanel HorizontalAlignment="Stretch" Grid.Column="0">
+                                <Label Content="{Binding Id}" DockPanel.Dock="Left"></Label>
+                                <Label Content=" | "></Label>
+                                <Label Content="{Binding Name}" DockPanel.Dock="Left"></Label>
+                                <Label Content=" | "></Label>
+                                <Label Content="{Binding Balance,StringFormat='0.00'}" DockPanel.Dock="Left"></Label>
+                            </DockPanel>
+                            <Button Content="{Binding BtnName}" DockPanel.Dock="Right" Width="50" Grid.Column="1" Command="{Binding Path = DataContext.AccountPaymentInfo.BindingAccountCommand, ElementName = ModePaymentWindowName}" CommandParameter="{Binding RelativeSource = {RelativeSource Self},Path=DataContext}" ></Button>
+                        </Grid>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
     </Grid>
 </Window>

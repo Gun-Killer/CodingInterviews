@@ -46,6 +46,8 @@ namespace ForYou.CodingInterviews.AccountModel.Repository
                 }
                 model.CreatedTime = DateTime.Now;
                 model.UpdatedTime = DateTime.Now;
+                model.CreatedBy = "Admin";
+                model.UpdatedBy = "Admin";
             }
             await Model.AddRangeAsync(models, cancelToken);
             return true;
@@ -54,6 +56,12 @@ namespace ForYou.CodingInterviews.AccountModel.Repository
         public async ValueTask<bool> DeleteAsync(T model, CancellationToken cancelToken = default)
         {
             Model.Remove(model);
+            return await ValueTask.FromResult(true);
+        }
+
+        public async ValueTask<bool> DeleteRangeAsync(IEnumerable<T> models, CancellationToken cancelToken = default)
+        {
+            Model.RemoveRange(models);
             return await ValueTask.FromResult(true);
         }
 
