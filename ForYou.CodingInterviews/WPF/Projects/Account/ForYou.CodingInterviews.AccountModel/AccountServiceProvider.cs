@@ -20,7 +20,7 @@ namespace ForYou.CodingInterviews.AccountModel
         {
             ServiceCollection services = new ServiceCollection();
             var dbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Resource\DB");
-            if(Directory.Exists(dbPath) == false)
+            if (Directory.Exists(dbPath) == false)
             {
                 Directory.CreateDirectory(dbPath);
             }
@@ -33,6 +33,10 @@ namespace ForYou.CodingInterviews.AccountModel
             services.AddScoped<IRecordModelRepository, RecordModelRepository>();
             services.AddScoped<IRecordUserModelRepository, RecordUserModelRepository>();
             services.AddScoped<ICategoryModelRepository, CategoryModelRepository>();
+            services.AddScoped<IModeOfPaymentModelRepository, ModeOfPaymentModelRepository>();
+            services.AddScoped<IAccountPaymentModelRepository, AccountPaymentModelRepository>();
+            services.AddScoped<IModePaymentWithAccountModelRepository, ModePaymentWithAccountModelRepository>();
+            services.AddScoped<IPlatformConsumeModelRepository, PlatformConsumeModelRepository>();
 
             _provider = services.BuildServiceProvider();
             Instance = new AccountServiceProvider();
