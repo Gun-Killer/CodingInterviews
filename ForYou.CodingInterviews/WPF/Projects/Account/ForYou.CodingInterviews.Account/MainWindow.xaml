@@ -23,6 +23,7 @@
         <Menu Grid.Row="0" Grid.ColumnSpan="3">
             <MenuItem Header="数据维护">
                 <MenuItem Header="支付方式" Click="ModePaymentManagementClicked"></MenuItem>
+                <MenuItem Header="分类" Click="CategoryManagementClicked"></MenuItem>
             </MenuItem>
         </Menu>
         

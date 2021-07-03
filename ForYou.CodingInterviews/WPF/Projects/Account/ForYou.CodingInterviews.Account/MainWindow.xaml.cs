@@ -33,5 +33,12 @@ namespace ForYou.CodingInterviews.Account
             modePaymentWindow.WindowStartupLocation = WindowStartupLocation.CenterOwner;
             modePaymentWindow.Show();
         }
+
+        private void CategoryManagementClicked(object sender, RoutedEventArgs e)
+        {
+            CategoryWindow categoryWindow = new CategoryWindow();
+            categoryWindow.Owner = this;
+            categoryWindow.Show();
+        }
     }
 }

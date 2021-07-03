@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Common\ForYou.CodingInterviews.Extension\ForYou.CodingInterviews.Extension.csproj" />
     <ProjectReference Include="..\ForYou.CodingInterviews.AccountModel\ForYou.CodingInterviews.AccountModel.csproj" />
   </ItemGroup>
 
