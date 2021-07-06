@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int main()
+int main007()
 {
     int* p1 = new int(10);
 

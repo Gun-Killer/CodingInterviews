@@ -146,6 +146,7 @@
     <ClCompile Include="005enum.cpp" />
     <ClCompile Include="006pointer.cpp" />
     <ClCompile Include="007new.cpp" />
+    <ClCompile Include="008new.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
