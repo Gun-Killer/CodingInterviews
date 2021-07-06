@@ -4,11 +4,11 @@
 using namespace std;
 
 
-int main()
+int main008()
 {
     char animal[20] = "bear";
     const char* bird = "wren";
-    char* ps;
+    char* ps = nullptr;
 
     cout << animal << " and ";
     cout << bird << "\n";
