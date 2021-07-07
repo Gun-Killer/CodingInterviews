@@ -8,13 +8,12 @@ using namespace std;
 
 char* getName();
 
+ 
 int main009()
 {
     char* name = getName();
     cout << name << " as " << (int*)name << endl;
     delete[] name;
-
-    
     return 0;
 }
 
