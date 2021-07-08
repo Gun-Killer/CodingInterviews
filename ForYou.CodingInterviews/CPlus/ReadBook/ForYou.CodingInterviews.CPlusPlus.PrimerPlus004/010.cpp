@@ -147,7 +147,7 @@ void learn17()
      p1.push_back("1");
 }
 
-int main()
+int main010()
 {
     learn01();
 
