@@ -71,9 +71,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{065C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.Account", "WPF\Projects\Account\ForYou.CodingInterviews.Account\ForYou.CodingInterviews.Account.csproj", "{33DB1E9E-46EF-46B2-9448-20E764125561}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.AccountModel", "WPF\Projects\Account\ForYou.CodingInterviews.AccountModel\ForYou.CodingInterviews.AccountModel.csproj", "{53077FA7-8AFF-4D3A-AA8C-BB2E40902CA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.AccountModel", "WPF\Projects\Account\ForYou.CodingInterviews.AccountModel\ForYou.CodingInterviews.AccountModel.csproj", "{53077FA7-8AFF-4D3A-AA8C-BB2E40902CA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForYou.CodingInterviews.AccountViewModel", "WPF\Projects\Account\ForYou.CodingInterviews.AccountViewModel\ForYou.CodingInterviews.AccountViewModel.csproj", "{C53623EC-2767-4B84-8443-B4F8EF715097}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForYou.CodingInterviews.AccountViewModel", "WPF\Projects\Account\ForYou.CodingInterviews.AccountViewModel\ForYou.CodingInterviews.AccountViewModel.csproj", "{C53623EC-2767-4B84-8443-B4F8EF715097}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.CPlusPlus.PrimerPlus005", "CPlus\ReadBook\ForYou.CodingInterviews.CPlusPlus.PrimerPlus005\ForYou.CodingInterviews.CPlusPlus.PrimerPlus005.vcxproj", "{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -379,6 +381,16 @@ Global
 		{C53623EC-2767-4B84-8443-B4F8EF715097}.Release|x64.Build.0 = Release|Any CPU
 		{C53623EC-2767-4B84-8443-B4F8EF715097}.Release|x86.ActiveCfg = Release|Any CPU
 		{C53623EC-2767-4B84-8443-B4F8EF715097}.Release|x86.Build.0 = Release|Any CPU
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}.Debug|x64.ActiveCfg = Debug|x64
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}.Debug|x64.Build.0 = Debug|x64
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}.Debug|x86.ActiveCfg = Debug|Win32
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}.Debug|x86.Build.0 = Debug|Win32
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}.Release|Any CPU.ActiveCfg = Release|Win32
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}.Release|x64.ActiveCfg = Release|x64
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}.Release|x64.Build.0 = Release|x64
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}.Release|x86.ActiveCfg = Release|Win32
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -415,6 +427,7 @@ Global
 		{33DB1E9E-46EF-46B2-9448-20E764125561} = {065CCAC6-8319-4D37-AF3A-F2664A8544A5}
 		{53077FA7-8AFF-4D3A-AA8C-BB2E40902CA0} = {065CCAC6-8319-4D37-AF3A-F2664A8544A5}
 		{C53623EC-2767-4B84-8443-B4F8EF715097} = {065CCAC6-8319-4D37-AF3A-F2664A8544A5}
+		{A8CAF2E0-2F0B-4928-AFD1-CA2E6AB00D54} = {CBFF64B0-0A49-4E2E-8BD3-F44F95424871}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A27EAF7D-BA4C-47B7-B9ED-8E31D9E99FEA}
