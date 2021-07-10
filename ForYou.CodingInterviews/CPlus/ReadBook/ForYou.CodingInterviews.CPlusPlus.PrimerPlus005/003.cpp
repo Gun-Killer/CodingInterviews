@@ -11,7 +11,7 @@ void learn04();
 void learn05();
 void learn06();
 void learn08();
-int main()
+int main003()
 {
     learn01();
 
