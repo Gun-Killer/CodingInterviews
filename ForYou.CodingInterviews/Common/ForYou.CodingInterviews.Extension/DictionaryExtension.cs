@@ -10,7 +10,7 @@ namespace ForYou.CodingInterviews.Extension
     {
         public static TValue? TryGet<TKey, TValue>(this IDictionary<TKey, TValue> dic, TKey key, TValue? defaultValue = default)
         {
-            if(dic.TryGetValue(key, out TValue value))
+            if (dic.TryGetValue(key, out var value))
             {
                 return value;
             }

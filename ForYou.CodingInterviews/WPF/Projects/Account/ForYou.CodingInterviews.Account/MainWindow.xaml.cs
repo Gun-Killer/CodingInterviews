@@ -40,5 +40,12 @@ namespace ForYou.CodingInterviews.Account
             categoryWindow.Owner = this;
             categoryWindow.Show();
         }
+
+        private void AddRecordClicked(object sender, RoutedEventArgs e)
+        {
+            AddRecordWindow window = new AddRecordWindow(); 
+            window.Owner = this;
+            window.Show();
+        }
     }
 }

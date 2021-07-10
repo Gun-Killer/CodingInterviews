@@ -37,6 +37,7 @@ namespace ForYou.CodingInterviews.AccountModel
             services.AddScoped<IAccountPaymentModelRepository, AccountPaymentModelRepository>();
             services.AddScoped<IModePaymentWithAccountModelRepository, ModePaymentWithAccountModelRepository>();
             services.AddScoped<IPlatformConsumeModelRepository, PlatformConsumeModelRepository>();
+            services.AddScoped<IRecordAccountAmountModelRepository, RecordAccountAmountModelRepository>();
 
             _provider = services.BuildServiceProvider();
             Instance = new AccountServiceProvider();

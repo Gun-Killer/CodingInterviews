@@ -24,6 +24,7 @@
             <MenuItem Header="数据维护">
                 <MenuItem Header="支付方式" Click="ModePaymentManagementClicked"></MenuItem>
                 <MenuItem Header="分类" Click="CategoryManagementClicked"></MenuItem>
+                <MenuItem Header="添加记录" Click="AddRecordClicked"></MenuItem>
             </MenuItem>
         </Menu>
         

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,6 +12,12 @@ namespace ForYou.CodingInterviews.AccountModel.Repository
     {
         public ModePaymentWithAccountModelRepository(AccountDBContext db) : base(db)
         {
+        }
+
+        public async  ValueTask<List<ModePaymentWithAccountModel>> GetAllAsync(CancellationToken cancelToken = default)
+        {
+            return await ModelNoTacking
+                .ToListAsync(cancelToken);
         }
 
         public async ValueTask<List<ModePaymentWithAccountModel>> GetByModeAccountIdsAsync(ICollection<long> modeIds, ICollection<long> accountIds)
