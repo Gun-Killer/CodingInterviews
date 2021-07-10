@@ -22,24 +22,25 @@ namespace ForYou.CodingInterviews.AccountViewModel.Commands
 
             var recordModelRepository = AccountServiceProvider.Instance.GetService<IRecordModelRepository>();
             var accountAmountRepository = AccountServiceProvider.Instance.GetService<IRecordAccountAmountModelRepository>();
-
+            var data = model.PayAccounControlSource.Where(t => t.NotError()).ToArray();
             RecordModel record = new RecordModel
             {
-                Amount = model.PayAccounControlSource.Sum(t => t.AmountBefore - t.AmountAfter),
+                Amount = data.Sum(t => t.AmountBefore - t.AmountAfter),
                 RecordTime = model.RecordTime,
                 Remark = model.Remark,
                 CategoryId = (model.SelectedCategory ?? model.SelectedCategoryChild).Id,
                 BookId = 1L,
             };
             await recordModelRepository.AddAsync(record);
-            var amounts = model.PayAccounControlSource.Select(t => new RecordAccountAmountModel
+            var amounts = data.Select(t => new RecordAccountAmountModel
             {
                 ModeOfPaymentId = t.SelectedMode.Id,
                 AccountPaymentId = t.SelectedAccount?.Id ?? 0L,
                 AmountAfter = t.AmountAfter,
                 AmountBefore = t.AmountBefore,
                 RecordId = record.Id,
-                Discounts = t.AmountBefore - t.AmountAfter
+                Discounts = t.AmountBefore - t.AmountAfter,
+                InOut = t.AmountBefore > 0m ? InOutEnum.In : InOutEnum.Out
 
             }).ToList();
             await accountAmountRepository.AddRangeAsync(amounts);
@@ -51,7 +52,7 @@ namespace ForYou.CodingInterviews.AccountViewModel.Commands
         {
             return base.CanExecute(parameter)
                 && parameter is RecordDetailViewModel model
-                && model.PayAccounControlSource.All(t => t.SelectedMode.NotNull() && t.AmountBefore >= t.AmountAfter)
+                && model.PayAccounControlSource.Any(t => t.NotError())
                 && model.SelectedCategory != null;
         }
     }

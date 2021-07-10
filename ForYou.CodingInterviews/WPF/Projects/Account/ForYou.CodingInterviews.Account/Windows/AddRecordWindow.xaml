@@ -13,6 +13,15 @@
     <Window.DataContext>
         <ViewModel:RecordDetailViewModel/>
     </Window.DataContext>
+    <Window.Resources>
+        <Style TargetType="ComboBoxItem">
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="VerticalContentAlignment" Value="Center"></Setter>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>
@@ -20,23 +29,21 @@
             <RowDefinition Height="50"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Grid Grid.Row="0">
+        <Grid Grid.Row="0" Margin="5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition> 
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="0">
+            <Grid Grid.Column="0"> 
                 <Grid.RowDefinitions>
                     <RowDefinition></RowDefinition>
-                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="auto"></RowDefinition>
                 </Grid.RowDefinitions>
-                <ListView Grid.Row="0" 
-                          BorderThickness="0"
+                <ListView Grid.Row="0"
                           ItemsSource="{Binding PayAccounControlSource}" 
                           HorizontalContentAlignment="Stretch">
                     <ListView.ItemTemplate>
                         <DataTemplate>
-                            <Grid Margin="5">
+                            <Grid Margin="5" Height="35">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="2*"></ColumnDefinition>
                                     <ColumnDefinition Width="2*"></ColumnDefinition>
@@ -48,7 +55,9 @@
                                           SelectedItem="{Binding DataContext.SelectedMode,RelativeSource = {RelativeSource Self}}"
                                           DisplayMemberPath="Name"
                                           MinWidth="100"
-                                          ></ComboBox>
+                                          >
+                                   
+                                </ComboBox>
 
                                 <ComboBox Grid.Column="1" 
                                           Margin="5,0"
@@ -91,15 +100,23 @@
                     </ListView.ItemContainerStyle>
                 </ListView>
 
-                <Button Grid.Row="1" Margin="5"
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="100"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.ColumnSpan="2" BorderThickness="1" BorderBrush="Gray"></Border>
+                    <Button Grid.Column="1" Margin="5"
+                        Height="35"
                         Command="{Binding ControlItemSourceCommand}"
                         CommandParameter="{Binding}"
                         Content="新增一行"
                         ></Button>
+                </Grid>
             </Grid>
         </Grid>
 
-        <Grid Grid.Row="1" Margin="5">
+        <Grid Grid.Row="1" Margin="5" Height="35">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
@@ -120,7 +137,7 @@
                 <ColumnDefinition Width="1*"></ColumnDefinition>
                 <ColumnDefinition Width="auto"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <Label VerticalContentAlignment="Center">备注</Label>
+            <Label VerticalContentAlignment="Center" BorderThickness="1" BorderBrush="Gray">备注</Label>
             <TextBox Grid.Column="1" 
                      VerticalContentAlignment="Center" 
                      Margin="5,0"

@@ -283,5 +283,11 @@ namespace ForYou.CodingInterviews.AccountViewModel
                 OnPropertyChanged(nameof(Discounts));
             }
         }
+
+
+        public bool NotError()
+        {
+            return SelectedMode.NotNull() && ((AmountBefore >= 0 && AmountBefore >= AmountAfter) || (AmountBefore < 0M && AmountBefore < AmountAfter));
+        }
     }
 }

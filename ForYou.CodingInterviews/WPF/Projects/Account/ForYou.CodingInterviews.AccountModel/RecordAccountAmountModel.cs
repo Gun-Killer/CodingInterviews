@@ -29,6 +29,8 @@ namespace ForYou.CodingInterviews.AccountModel
         /// 优惠
         /// </summary>
         public decimal Discounts { get; set; }
+
+        public InOutEnum InOut { get; set; } = InOutEnum.In;
     }
 
 
