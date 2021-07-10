@@ -15,95 +15,32 @@
             <RowDefinition Height="50"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="1*" MinWidth="250"></ColumnDefinition>
-            <ColumnDefinition Width="10"></ColumnDefinition>
-            <ColumnDefinition Width="3*" MinWidth="400"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Menu Grid.Row="0" Grid.ColumnSpan="3">
+        <Menu Grid.Row="0" VerticalAlignment="Stretch">
             <MenuItem Header="数据维护">
                 <MenuItem Header="支付方式" Click="ModePaymentManagementClicked"></MenuItem>
                 <MenuItem Header="分类" Click="CategoryManagementClicked"></MenuItem>
                 <MenuItem Header="添加记录" Click="AddRecordClicked"></MenuItem>
             </MenuItem>
         </Menu>
-        
         <Grid Grid.Row="1">
             <Grid.RowDefinitions>
-                <RowDefinition Height="40"></RowDefinition>
-                <RowDefinition Height="auto"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="40"></RowDefinition>
-                <RowDefinition Height="40"></RowDefinition>
-                <RowDefinition Height="40"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
             </Grid.RowDefinitions>
-            <DockPanel  Margin="5" HorizontalAlignment="Stretch" >
-                <Label>金额</Label>
-                <TextBox Margin="5,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" Text="{Binding Amount,Mode=TwoWay}"></TextBox>
-            </DockPanel>
-            <ComboBox Grid.Row="1" ItemsSource="{Binding Users.Result}" SelectedItem="{Binding SelectedUser}" Height="30" VerticalContentAlignment="Center">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <DockPanel>
-                            <Label Content="{Binding Id}"></Label>
-                            <Label Content="{Binding Name}"></Label>
-                        </DockPanel>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
-            <ListView x:Name="account_categories" ItemsSource="{Binding Categories.Result}" SelectedItem="{Binding DataContext.SeletedCategory,ElementName=AccountWindow}" Grid.Row="2">
-                <ListView.DataContext>
-                    <ViewModel:CategoryViewModel/>
-                </ListView.DataContext>
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Label Content="{Binding Name}"></Label>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-                <ListView.ItemsPanel>
-                    <ItemsPanelTemplate>
-                        <WrapPanel Orientation="Horizontal"></WrapPanel>
-                    </ItemsPanelTemplate>
-                </ListView.ItemsPanel>
-            </ListView>
-            <DatePicker Grid.Row="3" SelectedDate="{Binding RecordTime, Mode=TwoWay}">
-
-            </DatePicker>
-            <DockPanel  Margin="5" HorizontalAlignment="Stretch" Grid.Row="4">
-                <Label>备注</Label>
-                <TextBox Margin="5,0,0,0" VerticalContentAlignment="Center" HorizontalContentAlignment="Left" Text="{Binding Remark,Mode=TwoWay}"></TextBox>
-            </DockPanel>
-            <Grid Grid.Row="5" Margin="5">
-                <Button Command="{Binding AddCommand}" CommandParameter="{Binding}">添加</Button>
-            </Grid>
-        </Grid>
-        <GridSplitter Grid.Row="1" Grid.Column="1" Background="Red" BorderBrush="Red" Width="10" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"></GridSplitter>
-        <Grid Grid.Row="1" Grid.Column="2" Background="Aqua" MinWidth="400" x:Name="RecordGrid">
-            <Grid.DataContext>
-                <ViewModel:RecordViewModel/>
-            </Grid.DataContext>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="20"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
-                <RowDefinition Height="30"></RowDefinition>
-            </Grid.RowDefinitions>
-            <DataGrid Grid.Row="1" ItemsSource="{Binding Records.Result}" AutoGenerateColumns="False" CanUserAddRows="False" CanUserResizeColumns="False">
+            <DataGrid Grid.Row="0" ItemsSource="{Binding Records.Records.Result}" 
+                      AutoGenerateColumns="False" 
+                      CanUserAddRows="False">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="序号" Width="120" Binding="{Binding Id}" CanUserResize="False" CanUserSort="False" CanUserReorder="False"></DataGridTextColumn>
-                    <DataGridTextColumn Header="日期" Width="130" Binding="{Binding RecordTime,StringFormat='yyyy-MM-dd HH:mm:ss'}" CanUserSort="False" ></DataGridTextColumn>
-                    <DataGridTextColumn Header="金额" Width="80" Binding="{Binding Amount,StringFormat='0.00'}" CanUserSort="False" >
+                    <DataGridTextColumn Header="序号" MinWidth="120" Binding="{Binding Id}" CanUserResize="False" CanUserSort="False" CanUserReorder="False"></DataGridTextColumn>
+                    <DataGridTextColumn Header="日期" MinWidth="130" Binding="{Binding RecordTime,StringFormat='yyyy-MM-dd'}" CanUserSort="False" ></DataGridTextColumn>
+                    <DataGridTextColumn Header="金额" MinWidth="80" Binding="{Binding Amount,StringFormat='0.00'}" CanUserSort="False" >
                     </DataGridTextColumn>
-                    <DataGridTextColumn Header="分类" Width="80" Binding="{Binding CategoryName}" CanUserSort="False" ></DataGridTextColumn>
-                    <DataGridTextColumn Header="人员" Width="80" Binding="{Binding UserName}" CanUserSort="False" ></DataGridTextColumn>
-                    <DataGridTextColumn Header="备注" Width="80" Binding="{Binding Remark}" CanUserSort="False" ></DataGridTextColumn>
+                    <DataGridTextColumn Header="分类" MinWidth="80" Binding="{Binding CategoryName}" CanUserSort="False" ></DataGridTextColumn>
+                    <DataGridTextColumn Header="人员" MinWidth="80" Binding="{Binding UserName}" CanUserSort="False" ></DataGridTextColumn>
+                    <DataGridTextColumn Header="备注" MinWidth="80" Binding="{Binding Remark}" CanUserSort="False" ></DataGridTextColumn>
                 </DataGrid.Columns>
             </DataGrid>
-            <Grid Grid.Row="2" Background="Gray">
-                <DockPanel LastChildFill="False">
-                    <Button DockPanel.Dock="Left" Margin="10,0,0,0" Width="60">上一页</Button>
-                    <Button DockPanel.Dock="Right" Margin="0,0,10,0" Width="60">下一页</Button>
-                </DockPanel>
-            </Grid>
+            <Grid Grid.Row="1"></Grid>
         </Grid>
     </Grid>
 </Window>

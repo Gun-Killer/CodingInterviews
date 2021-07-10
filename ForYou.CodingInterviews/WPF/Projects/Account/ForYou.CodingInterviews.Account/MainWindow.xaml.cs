@@ -13,6 +13,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using ForYou.CodingInterviews.Account.Windows;
+using ForYou.CodingInterviews.AccountViewModel;
+using ForYou.CodingInterviews.Extension;
 
 namespace ForYou.CodingInterviews.Account
 {
@@ -45,7 +47,25 @@ namespace ForYou.CodingInterviews.Account
         {
             AddRecordWindow window = new AddRecordWindow(); 
             window.Owner = this;
+            window.Closed += AddWindowClosed;
             window.Show();
+        }
+
+
+        private void AddWindowClosed(object? sender, EventArgs e)
+        {
+            var recordWindow = sender as AddRecordWindow;
+            if (recordWindow.IsNull())
+            {
+                return;
+            }
+            recordWindow.Closed -= AddWindowClosed;
+            var viewModel = DataContext as MainWindowViewModel;
+            if(viewModel.IsNull())
+            {
+                return;
+            }
+            viewModel.Records.SyncNewRecord();
         }
     }
 }

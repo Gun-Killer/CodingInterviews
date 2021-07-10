@@ -23,10 +23,11 @@ namespace ForYou.CodingInterviews.AccountViewModel.Commands
             var recordModelRepository = AccountServiceProvider.Instance.GetService<IRecordModelRepository>();
             var accountAmountRepository = AccountServiceProvider.Instance.GetService<IRecordAccountAmountModelRepository>();
             var data = model.PayAccounControlSource.Where(t => t.NotError()).ToArray();
+            var now = DateTime.Now;
             RecordModel record = new RecordModel
             {
-                Amount = data.Sum(t => t.AmountBefore - t.AmountAfter),
-                RecordTime = model.RecordTime,
+                Amount = data.Sum(t => t.AmountAfter),
+                RecordTime = model.RecordTime.AddHours(now.Hour).AddMinutes(now.Minute).AddSeconds(now.Second),
                 Remark = model.Remark,
                 CategoryId = (model.SelectedCategory ?? model.SelectedCategoryChild).Id,
                 BookId = 1L,

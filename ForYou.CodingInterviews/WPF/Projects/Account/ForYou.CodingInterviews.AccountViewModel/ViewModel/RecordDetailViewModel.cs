@@ -208,6 +208,7 @@ namespace ForYou.CodingInterviews.AccountViewModel
             Remark = string.Empty;
             SelectedCategory = null;
             SelectedCategoryChild = null;
+            RecordId = 0L;
         }
     }
 
@@ -287,7 +288,7 @@ namespace ForYou.CodingInterviews.AccountViewModel
 
         public bool NotError()
         {
-            return SelectedMode.NotNull() && ((AmountBefore >= 0 && AmountBefore >= AmountAfter) || (AmountBefore < 0M && AmountBefore < AmountAfter));
+            return SelectedMode.NotNull() && ((AmountBefore >= 0 && AmountBefore >= AmountAfter) || (AmountBefore < 0M && AmountBefore <= AmountAfter));
         }
     }
 }
