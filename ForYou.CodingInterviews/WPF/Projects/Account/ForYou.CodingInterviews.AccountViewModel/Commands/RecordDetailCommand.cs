@@ -29,7 +29,7 @@ namespace ForYou.CodingInterviews.AccountViewModel.Commands
                 Amount = data.Sum(t => t.AmountAfter),
                 RecordTime = model.RecordTime.AddHours(now.Hour).AddMinutes(now.Minute).AddSeconds(now.Second),
                 Remark = model.Remark,
-                CategoryId = (model.SelectedCategory ?? model.SelectedCategoryChild).Id,
+                CategoryId = (model.SelectedCategoryChild ?? model.SelectedCategory).Id,
                 BookId = 1L,
             };
             await recordModelRepository.AddAsync(record);
