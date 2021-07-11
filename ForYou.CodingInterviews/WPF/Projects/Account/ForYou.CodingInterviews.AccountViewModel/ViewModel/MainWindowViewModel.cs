@@ -16,6 +16,8 @@ namespace ForYou.CodingInterviews.AccountViewModel
 
         public MainWindowViewModel()
         {
+            BeforeRefreshCommand = new RecordRefreshCommand(false);
+            AfterRefreshCommand = new RecordRefreshCommand(true);
             Records = new RecordViewModel();
         }
 
@@ -29,5 +31,9 @@ namespace ForYou.CodingInterviews.AccountViewModel
                 OnPropertyChanged(nameof(Records));
             }
         }
+
+
+        public RecordRefreshCommand BeforeRefreshCommand { get; set; }
+        public RecordRefreshCommand AfterRefreshCommand { get; set; }
     }
 }
