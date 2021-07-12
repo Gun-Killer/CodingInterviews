@@ -27,7 +27,7 @@ namespace ForYou.CodingInterviews.AccountViewModel.Commands
             RecordModel record = new RecordModel
             {
                 Amount = data.Sum(t => t.AmountAfter),
-                RecordTime = model.RecordTime.AddHours(now.Hour).AddMinutes(now.Minute).AddSeconds(now.Second),
+                RecordTime = model.RecordTime.Date.AddHours(now.Hour).AddMinutes(now.Minute).AddSeconds(now.Second),
                 Remark = model.Remark,
                 CategoryId = (model.SelectedCategoryChild ?? model.SelectedCategory).Id,
                 BookId = 1L,
