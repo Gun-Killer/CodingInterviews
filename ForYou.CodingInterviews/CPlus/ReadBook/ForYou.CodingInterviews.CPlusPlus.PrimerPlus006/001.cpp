@@ -9,7 +9,7 @@ void learn06_04();
 void learn06_05();
 void learn06_09();
 
-int main()
+int main001()
 {
     //learn06_02();
     //learn06_03();
