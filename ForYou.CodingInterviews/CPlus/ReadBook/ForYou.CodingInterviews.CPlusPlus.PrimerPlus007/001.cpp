@@ -6,7 +6,7 @@ int calSum(int arr[], int size);
 
 int calSum2(int *arr, int size);
 
-int main()
+int main001()
 {
     int arr[]{ 1,4 ,6,78,45,14,25,36,111 };
 
