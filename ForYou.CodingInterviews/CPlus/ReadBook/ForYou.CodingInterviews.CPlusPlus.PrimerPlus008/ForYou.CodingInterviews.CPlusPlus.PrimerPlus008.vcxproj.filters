@@ -14,24 +14,4 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="001.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="002.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="003.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="004.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="005.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="006.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-  </ItemGroup>
 </Project>

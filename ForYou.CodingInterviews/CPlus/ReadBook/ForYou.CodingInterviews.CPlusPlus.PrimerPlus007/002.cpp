@@ -7,7 +7,7 @@ void towDArray(int num[][4], int rows);
 void towDArray2(int num[][4], int rows);
 void towDArray3(int (*num)[4], int rows);
 
-int main()
+int main002()
 {
     int num = 10;
     const int* num_p = &num;
