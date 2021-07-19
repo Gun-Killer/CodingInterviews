@@ -27,6 +27,9 @@
     <ClCompile Include="ReadBookExercise01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ReadBookExercise02.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InnerMethod.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ReadBookExercise01.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadBookExercise02.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

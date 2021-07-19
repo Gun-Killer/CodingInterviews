@@ -142,11 +142,13 @@
     <ClCompile Include="InnerMethod.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ReadBookExercise01.cpp" />
+    <ClCompile Include="ReadBookExercise02.cpp" />
     <ClCompile Include="ReferenceMethodParameter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InnerMethod.h" />
     <ClInclude Include="ReadBookExercise01.h" />
+    <ClInclude Include="ReadBookExercise02.h" />
     <ClInclude Include="ReferenceMethodParameter.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
