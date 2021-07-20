@@ -3,6 +3,7 @@
 #include "InnerMethod.h"
 #include "ReferenceMethodParameter.h"
 #include "ReadBookExercise01.h"
+#include "ReadBookExercise02.h"
 using namespace std;
 
 int main()
@@ -41,5 +42,11 @@ int main()
     float m = 10.0f;
 
     decltype ((m)) h = m;
+
+    ReadBookExercise02 p3;
+    int arr[5] = { 1,8,4,5,7 };
+    cout << p3.test05Max5(arr) << endl;
+
+    cout << p3.test07SumArray<int, int>(arr, 5) << endl;
     return 0;
 }

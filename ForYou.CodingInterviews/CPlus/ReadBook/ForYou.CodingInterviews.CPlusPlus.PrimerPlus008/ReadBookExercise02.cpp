@@ -33,3 +33,27 @@ void ReadBookExercise02::test03(string& str)
         str[i] = toupper(str[i]);
     }
 }
+
+void ReadBookExercise02::test04_set(stringy& beany, char* testing)
+{
+    auto len = strlen(testing);
+    beany.str = new char[len];
+    strcpy_s(beany.str, len, testing);
+    beany.ct = len;
+}
+
+void ReadBookExercise02::test04_show(stringy& beany, int count)
+{
+    for (int i = 0; i < count; i++)
+    {
+        cout << beany.str << endl;
+    }
+}
+
+void ReadBookExercise02::test04_show(char* testing, int count)
+{
+    for (int i = 0; i < count; i++)
+    {
+        cout << testing << endl;
+    }
+}
