@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ExternalLearn000002.cpp" />
     <ClCompile Include="Learn000001.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
