@@ -24,9 +24,27 @@
     <ClCompile Include="ExternalLearn000002.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="NewLearn000003.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Learn00004.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Learn009_06.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Learn0090006.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Learn000001.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Learn00004.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Learn0090006.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
