@@ -4,6 +4,10 @@ namespace GunKiller
 {
     void cross(int** matrix1, int m1_row, int m1_column, int** matrix2, int m2_row, int m2_column, int** res)
     {
+        if (m1_column != m2_row)
+        {
+            return;
+        }
         for (int res_row = 0; res_row < m1_row; res_row++)
         {
             for (int res_column = 0; res_column < m2_column; res_column++)
