@@ -24,12 +24,36 @@
     <ClCompile Include="Deposit.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Person.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Move.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="plorg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="List.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Stock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Deposit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Person.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Move.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="plorg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="List.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

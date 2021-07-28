@@ -140,11 +140,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Deposit.cpp" />
+    <ClCompile Include="List.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Move.cpp" />
+    <ClCompile Include="Person.cpp" />
+    <ClCompile Include="plorg.cpp" />
     <ClCompile Include="Stock.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Deposit.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="Move.h" />
+    <ClInclude Include="Person.h" />
+    <ClInclude Include="plorg.h" />
     <ClInclude Include="Stock.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
