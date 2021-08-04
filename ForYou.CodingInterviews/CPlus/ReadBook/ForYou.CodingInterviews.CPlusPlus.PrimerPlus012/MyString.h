@@ -5,6 +5,9 @@ private:
     int size{ 0 };
     char* str = nullptr;
     static int nums;
+
+    void resize(int size);
+    void release();
 public:
     MyString();
     MyString(const char* input);
