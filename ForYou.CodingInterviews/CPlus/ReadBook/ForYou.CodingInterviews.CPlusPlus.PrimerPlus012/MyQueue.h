@@ -26,7 +26,9 @@ public:
 
     void enqueue(const NoteTypeT& item);
 
-    NoteTypeT& dequeue();
+    NoteTypeT dequeue();
+
+    bool dequeue(NoteTypeT& item);
 
     MyQueue& operator=(const MyQueue& source);
 };
@@ -85,7 +87,7 @@ int MyQueue<NoteTypeT>::size()
 }
 
 template<typename NoteTypeT>
-NoteTypeT& MyQueue<NoteTypeT>::dequeue()
+NoteTypeT MyQueue<NoteTypeT>::dequeue()
 {
     if (m_size < 1)
     {
@@ -97,6 +99,21 @@ NoteTypeT& MyQueue<NoteTypeT>::dequeue()
     NoteTypeT res = temp->item;
     delete temp;
     return res;
+}
+
+template<typename NoteTypeT>
+inline bool MyQueue<NoteTypeT>::dequeue(NoteTypeT& item)
+{
+    if (m_size < 1)
+    {
+        return false;
+    }
+    m_size--;
+    auto temp = first;
+    first = first->next;
+    item = temp->item;
+    delete temp;
+    return true;
 }
 
 template<typename NoteTypeT>
