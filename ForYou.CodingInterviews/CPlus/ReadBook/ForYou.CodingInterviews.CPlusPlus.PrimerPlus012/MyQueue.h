@@ -27,6 +27,8 @@ public:
     void enqueue(const NoteTypeT& item);
 
     NoteTypeT& dequeue();
+
+    MyQueue& operator=(const MyQueue& source);
 };
 
 template<typename NoteTypeT>
@@ -95,4 +97,20 @@ NoteTypeT& MyQueue<NoteTypeT>::dequeue()
     NoteTypeT res = temp->item;
     delete temp;
     return res;
+}
+
+template<typename NoteTypeT>
+inline MyQueue<NoteTypeT>& MyQueue<NoteTypeT>::operator=(const MyQueue<NoteTypeT>& source)
+{
+    if (source == *this)
+    {
+        return *this;
+    }
+    auto temp = source.first;
+    while (temp != nullptr)
+    {
+        enqueue(temp->item);
+        temp = temp->next;
+    }
+    return  *this;
 }
