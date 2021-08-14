@@ -1,12 +1,14 @@
 #include <iostream>
 
-using std::cout;
-using std::endl;
-
 #include "MyMan.h"
 #include "MyOtherMan.h"
+#include "MyReturnObjectTest.h"
+
+
+MyReturnObjectTest test0000001();
 
 using namespace Killer;
+
 
 int main()
 {
@@ -28,5 +30,13 @@ int main()
     p3.setAge(20);
     p3.show();
 
+    test0000001();
+
     return 0;
+}
+
+MyReturnObjectTest test0000001()
+{
+    MyReturnObjectTest p;
+    return p;
 }

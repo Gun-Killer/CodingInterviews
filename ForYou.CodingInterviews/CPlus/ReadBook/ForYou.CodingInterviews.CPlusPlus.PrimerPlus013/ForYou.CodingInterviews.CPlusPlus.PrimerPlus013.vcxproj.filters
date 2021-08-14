@@ -27,6 +27,15 @@
     <ClCompile Include="MyOtherMan.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MyReturnObjectTest.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Classic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyPerson.h">
@@ -36,6 +45,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MyOtherMan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Classic.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
