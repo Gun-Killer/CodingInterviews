@@ -10,6 +10,9 @@ namespace Killer
             :MyPerson(arg_name, arg_age)
         {
 
-        }
+        };
+        virtual void setAge(int age) override;
+
+        virtual ~MyMan();
     };
 }

@@ -18,5 +18,10 @@ namespace Killer
         MyPerson(const MyPerson& person);
 
         void show();
+
+
+        virtual void setAge(int age);
+
+        virtual ~MyPerson();
     };
 }

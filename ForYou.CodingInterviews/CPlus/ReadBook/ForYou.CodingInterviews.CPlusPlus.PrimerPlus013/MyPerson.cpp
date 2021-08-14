@@ -18,3 +18,14 @@ void Killer::MyPerson::show()
         << "\tAge:\t" << age
         << endl;
 }
+
+void Killer::MyPerson::setAge(int age)
+{
+    cout << "Person" << endl;
+    this->age = age;
+}
+
+Killer::MyPerson::~MyPerson()
+{
+
+}
