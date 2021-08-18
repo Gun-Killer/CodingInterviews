@@ -141,9 +141,11 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MyStudent14.cpp" />
+    <ClCompile Include="MyStudentPrivateinheritance.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyStudent14.h" />
+    <ClInclude Include="MyStudentPrivateinheritance.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
