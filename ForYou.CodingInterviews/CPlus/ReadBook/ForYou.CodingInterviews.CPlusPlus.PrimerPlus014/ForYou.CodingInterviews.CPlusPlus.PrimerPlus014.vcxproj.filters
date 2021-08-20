@@ -24,12 +24,36 @@
     <ClCompile Include="MyStudentPrivateinheritance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MultiInheritanceA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiInheritanceB.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiInheritanceC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiInheritanceD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyStudent14.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MyStudentPrivateinheritance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiInheritanceA.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiInheritanceB.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiInheritanceC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiInheritanceD.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

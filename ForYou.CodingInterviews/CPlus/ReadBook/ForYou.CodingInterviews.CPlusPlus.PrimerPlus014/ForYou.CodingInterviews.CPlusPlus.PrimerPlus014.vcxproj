@@ -140,10 +140,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MultiInheritanceA.cpp" />
+    <ClCompile Include="MultiInheritanceB.cpp" />
+    <ClCompile Include="MultiInheritanceC.cpp" />
+    <ClCompile Include="MultiInheritanceD.cpp" />
     <ClCompile Include="MyStudent14.cpp" />
     <ClCompile Include="MyStudentPrivateinheritance.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MultiInheritanceA.h" />
+    <ClInclude Include="MultiInheritanceB.h" />
+    <ClInclude Include="MultiInheritanceC.h" />
+    <ClInclude Include="MultiInheritanceD.h" />
     <ClInclude Include="MyStudent14.h" />
     <ClInclude Include="MyStudentPrivateinheritance.h" />
   </ItemGroup>
