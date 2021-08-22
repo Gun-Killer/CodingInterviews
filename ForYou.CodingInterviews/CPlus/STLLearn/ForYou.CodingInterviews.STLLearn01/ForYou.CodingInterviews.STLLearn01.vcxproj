@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{1368bb5a-ea14-4b68-9a70-6bd9b259d19f}</ProjectGuid>
-    <RootNamespace>ForYouCodingInterviewsCPlusPlusPrimerPlus014</RootNamespace>
+    <ProjectGuid>{58c88518-4e01-4469-811d-01c83869ba09}</ProjectGuid>
+    <RootNamespace>ForYouCodingInterviewsSTLLearn01</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,33 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="BadDude.cpp" />
-    <ClCompile Include="Gunslinger.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MultiInheritanceA.cpp" />
-    <ClCompile Include="MultiInheritanceB.cpp" />
-    <ClCompile Include="MultiInheritanceC.cpp" />
-    <ClCompile Include="MultiInheritanceD.cpp" />
-    <ClCompile Include="MyPerson14.cpp" />
-    <ClCompile Include="MyStudent14.cpp" />
-    <ClCompile Include="MyStudentPrivateinheritance.cpp" />
-    <ClCompile Include="MyWine.cpp" />
-    <ClCompile Include="MyWinePrivate.cpp" />
-    <ClCompile Include="PokerPlayer.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="BadDude.h" />
-    <ClInclude Include="Gunslinger.h" />
-    <ClInclude Include="MultiInheritanceA.h" />
-    <ClInclude Include="MultiInheritanceB.h" />
-    <ClInclude Include="MultiInheritanceC.h" />
-    <ClInclude Include="MultiInheritanceD.h" />
-    <ClInclude Include="MyPerson14.h" />
-    <ClInclude Include="MyStudent14.h" />
-    <ClInclude Include="MyStudentPrivateinheritance.h" />
-    <ClInclude Include="MyWine.h" />
-    <ClInclude Include="MyWinePrivate.h" />
-    <ClInclude Include="PokerPlayer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

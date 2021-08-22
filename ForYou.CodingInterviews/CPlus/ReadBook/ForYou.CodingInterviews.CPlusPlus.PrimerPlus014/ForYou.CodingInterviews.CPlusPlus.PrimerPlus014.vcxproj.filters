@@ -36,6 +36,24 @@
     <ClCompile Include="MultiInheritanceD.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MyWine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyWinePrivate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyPerson14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Gunslinger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PokerPlayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BadDude.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyStudent14.h">
@@ -54,6 +72,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MultiInheritanceD.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyWine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyWinePrivate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MyPerson14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Gunslinger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PokerPlayer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BadDude.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
