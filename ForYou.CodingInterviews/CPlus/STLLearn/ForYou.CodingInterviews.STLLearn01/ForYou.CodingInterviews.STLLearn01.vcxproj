@@ -140,6 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyTemplate.cpp" />
+    <ClCompile Include="MyTemplateInt.cpp" />
+    <ClCompile Include="MyTemplateMultiArg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyTemplate.h" />
+    <ClInclude Include="MyTemplateInt.h" />
+    <ClInclude Include="MyTemplateMultiArg.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
