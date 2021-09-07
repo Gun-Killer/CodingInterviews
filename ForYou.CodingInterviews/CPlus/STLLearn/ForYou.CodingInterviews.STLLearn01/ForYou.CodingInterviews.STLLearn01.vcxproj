@@ -140,11 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MyHashTable.cpp" />
     <ClCompile Include="MyTemplate.cpp" />
     <ClCompile Include="MyTemplateInt.cpp" />
     <ClCompile Include="MyTemplateMultiArg.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyHashTable.h" />
     <ClInclude Include="MyTemplate.h" />
     <ClInclude Include="MyTemplateInt.h" />
     <ClInclude Include="MyTemplateMultiArg.h" />
