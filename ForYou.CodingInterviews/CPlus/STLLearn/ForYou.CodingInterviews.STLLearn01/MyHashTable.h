@@ -21,7 +21,7 @@ namespace Killer
             }
             TKey key;
             int value_index{ -1 };
-            BucketNode* next;
+            BucketNode* next{ nullptr };
         };
         BucketNode* buckets{ nullptr };
         int size{ 0 };

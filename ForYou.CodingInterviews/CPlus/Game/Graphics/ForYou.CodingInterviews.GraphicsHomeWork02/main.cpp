@@ -33,6 +33,16 @@ Eigen::Matrix4f get_model_matrix(float rotation_angle)
 
     return model;
 }
+Eigen::Matrix4f get_rotation(Vector3f axis, float angle)
+{
+    Eigen::Matrix4f model = Eigen::Matrix4f::Identity();
+    Eigen::AngleAxisf rotation_vector_x(angle * MY_PI / 180, Eigen::Vector3f(axis.x(),0.0f,0.0f));
+    Eigen::AngleAxisf rotation_vector_y(angle * MY_PI / 180, Eigen::Vector3f(0,axis.y(),0));
+    Eigen::AngleAxisf rotation_vector_z(angle * MY_PI / 180, Eigen::Vector3f(00,0,axis.z()));
+    auto res =  rotation_vector_x* rotation_vector_y* rotation_vector_z;
+    model.block(0, 0, 3, 3) = res.toRotationMatrix() * Eigen::Matrix3f::Identity();
+    return model;
+}
 
 /// <summary>
 /// 

@@ -3,8 +3,14 @@
 #include <deque>
 #include <map>
 #include "MyHashTable.h"
+#include <functional>
+#include <vector>
+#include <algorithm>
 
 using namespace Killer;
+using std::bind;
+using namespace std::placeholders;
+
 
 class KeyEqual
 {
@@ -24,6 +30,7 @@ public:
     }
 };
 
+
 int main()
 {
     std::list<int> list_test;
@@ -38,6 +45,15 @@ int main()
 
     MyHashTable<int, int, IntHashFunc, KeyEqual> table;
     table.Add(1, 1);
+
+    auto func = bind<int>(IntHashFunc(), _1);
+
+    std::cout << func(10) << std::endl;
+
+    std::vector<int> vs{ 1,2,3 };
+
+    auto res = std::count_if(vs.begin(), vs.end(), bind(std::less<int>(), _1, 2));
+
     return 0;
 }
 
