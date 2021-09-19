@@ -6,6 +6,7 @@
 #include <functional>
 #include <vector>
 #include <algorithm>
+#include "MyTestSSE.h"
 
 using namespace Killer;
 using std::bind;
@@ -53,6 +54,12 @@ int main()
     std::vector<int> vs{ 1,2,3 };
 
     auto res = std::count_if(vs.begin(), vs.end(), bind(std::less<int>(), _1, 2));
+
+
+
+    MyTestSSE see;
+
+    see.testSSE();
 
     return 0;
 }
