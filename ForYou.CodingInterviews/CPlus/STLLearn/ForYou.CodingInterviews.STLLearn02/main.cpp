@@ -3,6 +3,8 @@
 #include <functional>
 #include <initializer_list>
 
+#include "ExplicitObject.h"
+
 using namespace std;
 
 template<typename T>
@@ -35,5 +37,9 @@ int main()
 
     init_list_test({ 1, 2, 3 });
 
+
+    ExplicitObject p1(1, 2);
+    ExplicitObject p2(3, 4);
+    auto p3 = p1 + p2;
     return 0;
 }
