@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.STL
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.STLLearn02", "..\..\ForYou.CodingInterviews\CPlus\STLLearn\ForYou.CodingInterviews.STLLearn02\ForYou.CodingInterviews.STLLearn02.vcxproj", "{16E6254F-2474-47FD-870F-2A38CEA1A714}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.STLLearn03", "..\..\ForYou.CodingInterviews\CPlus\STLLearn\ForYou.CodingInterviews.STLLearn03\ForYou.CodingInterviews.STLLearn03.vcxproj", "{E5873F45-8F25-4D02-8D0A-EABB127900D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{16E6254F-2474-47FD-870F-2A38CEA1A714}.Release|x64.Build.0 = Release|x64
 		{16E6254F-2474-47FD-870F-2A38CEA1A714}.Release|x86.ActiveCfg = Release|Win32
 		{16E6254F-2474-47FD-870F-2A38CEA1A714}.Release|x86.Build.0 = Release|Win32
+		{E5873F45-8F25-4D02-8D0A-EABB127900D4}.Debug|x64.ActiveCfg = Debug|x64
+		{E5873F45-8F25-4D02-8D0A-EABB127900D4}.Debug|x64.Build.0 = Debug|x64
+		{E5873F45-8F25-4D02-8D0A-EABB127900D4}.Debug|x86.ActiveCfg = Debug|Win32
+		{E5873F45-8F25-4D02-8D0A-EABB127900D4}.Debug|x86.Build.0 = Debug|Win32
+		{E5873F45-8F25-4D02-8D0A-EABB127900D4}.Release|x64.ActiveCfg = Release|x64
+		{E5873F45-8F25-4D02-8D0A-EABB127900D4}.Release|x64.Build.0 = Release|x64
+		{E5873F45-8F25-4D02-8D0A-EABB127900D4}.Release|x86.ActiveCfg = Release|Win32
+		{E5873F45-8F25-4D02-8D0A-EABB127900D4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
