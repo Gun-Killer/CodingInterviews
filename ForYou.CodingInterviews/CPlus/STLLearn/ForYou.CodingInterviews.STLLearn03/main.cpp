@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include "MyFoo.h"
 
 using namespace std;
 
@@ -24,5 +24,9 @@ void learn_stl_03_001_replacement_new_test()
 int main()
 {
     learn_stl_03_001_replacement_new_test();
+
+    MyFoo* p = new MyFoo();
+    delete p;
+
     return 0;
 }
