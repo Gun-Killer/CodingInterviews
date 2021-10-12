@@ -21,5 +21,3 @@ public:
         inner_allocator.deallocate(p, size);
     }
 };
-
-MyAllocator MyFoo::inner_allocator;
