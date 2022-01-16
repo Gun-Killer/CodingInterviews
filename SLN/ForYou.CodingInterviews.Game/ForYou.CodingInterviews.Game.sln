@@ -11,6 +11,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.Gra
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.GraphicsHomeWork02", "..\..\ForYou.CodingInterviews\CPlus\Game\Graphics\ForYou.CodingInterviews.GraphicsHomeWork02\ForYou.CodingInterviews.GraphicsHomeWork02.vcxproj", "{FF79DC4B-60B3-4F43-B995-8EB2D0DA3310}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DX12Learn", "DX12Learn", "{63285EB3-BB00-45D3-89D3-0C21D2F04BD2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.DX12Learn01", "..\..\ForYou.CodingInterviews\CPlus\Game\DX12Learn\ForYou.CodingInterviews.DX12Learn01\ForYou.CodingInterviews.DX12Learn01.vcxproj", "{BC951F16-8126-4ACB-8BE0-89579FC6165F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.DX12Learn02", "..\..\ForYou.CodingInterviews\CPlus\Game\DX12Learn\ForYou.CodingInterviews.DX12Learn02\ForYou.CodingInterviews.DX12Learn02.vcxproj", "{10D90F7F-0370-4D84-B342-EE34273240AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -35,6 +41,22 @@ Global
 		{FF79DC4B-60B3-4F43-B995-8EB2D0DA3310}.Release|x64.Build.0 = Release|x64
 		{FF79DC4B-60B3-4F43-B995-8EB2D0DA3310}.Release|x86.ActiveCfg = Release|Win32
 		{FF79DC4B-60B3-4F43-B995-8EB2D0DA3310}.Release|x86.Build.0 = Release|Win32
+		{BC951F16-8126-4ACB-8BE0-89579FC6165F}.Debug|x64.ActiveCfg = Debug|x64
+		{BC951F16-8126-4ACB-8BE0-89579FC6165F}.Debug|x64.Build.0 = Debug|x64
+		{BC951F16-8126-4ACB-8BE0-89579FC6165F}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC951F16-8126-4ACB-8BE0-89579FC6165F}.Debug|x86.Build.0 = Debug|Win32
+		{BC951F16-8126-4ACB-8BE0-89579FC6165F}.Release|x64.ActiveCfg = Release|x64
+		{BC951F16-8126-4ACB-8BE0-89579FC6165F}.Release|x64.Build.0 = Release|x64
+		{BC951F16-8126-4ACB-8BE0-89579FC6165F}.Release|x86.ActiveCfg = Release|Win32
+		{BC951F16-8126-4ACB-8BE0-89579FC6165F}.Release|x86.Build.0 = Release|Win32
+		{10D90F7F-0370-4D84-B342-EE34273240AB}.Debug|x64.ActiveCfg = Debug|x64
+		{10D90F7F-0370-4D84-B342-EE34273240AB}.Debug|x64.Build.0 = Debug|x64
+		{10D90F7F-0370-4D84-B342-EE34273240AB}.Debug|x86.ActiveCfg = Debug|Win32
+		{10D90F7F-0370-4D84-B342-EE34273240AB}.Debug|x86.Build.0 = Debug|Win32
+		{10D90F7F-0370-4D84-B342-EE34273240AB}.Release|x64.ActiveCfg = Release|x64
+		{10D90F7F-0370-4D84-B342-EE34273240AB}.Release|x64.Build.0 = Release|x64
+		{10D90F7F-0370-4D84-B342-EE34273240AB}.Release|x86.ActiveCfg = Release|Win32
+		{10D90F7F-0370-4D84-B342-EE34273240AB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +65,9 @@ Global
 		{96746DBD-F2DE-41FB-804F-CFEB1CD22B9F} = {CF386CC3-4271-49F3-8F55-AA5759AB01F9}
 		{12C613C2-7E6E-4FDF-974C-103F1416F524} = {96746DBD-F2DE-41FB-804F-CFEB1CD22B9F}
 		{FF79DC4B-60B3-4F43-B995-8EB2D0DA3310} = {96746DBD-F2DE-41FB-804F-CFEB1CD22B9F}
+		{63285EB3-BB00-45D3-89D3-0C21D2F04BD2} = {CF386CC3-4271-49F3-8F55-AA5759AB01F9}
+		{BC951F16-8126-4ACB-8BE0-89579FC6165F} = {63285EB3-BB00-45D3-89D3-0C21D2F04BD2}
+		{10D90F7F-0370-4D84-B342-EE34273240AB} = {63285EB3-BB00-45D3-89D3-0C21D2F04BD2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {816E6C32-85EA-4EE5-A103-FB3D26DE6EDE}
