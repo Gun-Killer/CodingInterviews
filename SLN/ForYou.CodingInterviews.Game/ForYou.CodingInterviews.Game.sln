@@ -17,6 +17,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.DX1
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.DX12Learn02", "..\..\ForYou.CodingInterviews\CPlus\Game\DX12Learn\ForYou.CodingInterviews.DX12Learn02\ForYou.CodingInterviews.DX12Learn02.vcxproj", "{10D90F7F-0370-4D84-B342-EE34273240AB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interpolation", "Interpolation", "{0AB4FB5A-F2A4-461D-B5C7-BB848C833207}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.Interpolation", "..\..\ForYou.CodingInterviews\CPlus\Game\Interpolation\ForYou.CodingInterviews.Interpolation\ForYou.CodingInterviews.Interpolation.vcxproj", "{0CD2CFD8-A5D5-4CE6-A5FC-515B79E0EFDF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ForYou.CodingInterviews.InterpolationConsole", "..\..\ForYou.CodingInterviews\CPlus\Game\Interpolation\ForYou.CodingInterviews.InterpolationConsole\ForYou.CodingInterviews.InterpolationConsole.vcxproj", "{8BFE9E65-4DBA-4B48-BED7-D489DBFD1C53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -57,6 +63,22 @@ Global
 		{10D90F7F-0370-4D84-B342-EE34273240AB}.Release|x64.Build.0 = Release|x64
 		{10D90F7F-0370-4D84-B342-EE34273240AB}.Release|x86.ActiveCfg = Release|Win32
 		{10D90F7F-0370-4D84-B342-EE34273240AB}.Release|x86.Build.0 = Release|Win32
+		{0CD2CFD8-A5D5-4CE6-A5FC-515B79E0EFDF}.Debug|x64.ActiveCfg = Debug|x64
+		{0CD2CFD8-A5D5-4CE6-A5FC-515B79E0EFDF}.Debug|x64.Build.0 = Debug|x64
+		{0CD2CFD8-A5D5-4CE6-A5FC-515B79E0EFDF}.Debug|x86.ActiveCfg = Debug|Win32
+		{0CD2CFD8-A5D5-4CE6-A5FC-515B79E0EFDF}.Debug|x86.Build.0 = Debug|Win32
+		{0CD2CFD8-A5D5-4CE6-A5FC-515B79E0EFDF}.Release|x64.ActiveCfg = Release|x64
+		{0CD2CFD8-A5D5-4CE6-A5FC-515B79E0EFDF}.Release|x64.Build.0 = Release|x64
+		{0CD2CFD8-A5D5-4CE6-A5FC-515B79E0EFDF}.Release|x86.ActiveCfg = Release|Win32
+		{0CD2CFD8-A5D5-4CE6-A5FC-515B79E0EFDF}.Release|x86.Build.0 = Release|Win32
+		{8BFE9E65-4DBA-4B48-BED7-D489DBFD1C53}.Debug|x64.ActiveCfg = Debug|x64
+		{8BFE9E65-4DBA-4B48-BED7-D489DBFD1C53}.Debug|x64.Build.0 = Debug|x64
+		{8BFE9E65-4DBA-4B48-BED7-D489DBFD1C53}.Debug|x86.ActiveCfg = Debug|Win32
+		{8BFE9E65-4DBA-4B48-BED7-D489DBFD1C53}.Debug|x86.Build.0 = Debug|Win32
+		{8BFE9E65-4DBA-4B48-BED7-D489DBFD1C53}.Release|x64.ActiveCfg = Release|x64
+		{8BFE9E65-4DBA-4B48-BED7-D489DBFD1C53}.Release|x64.Build.0 = Release|x64
+		{8BFE9E65-4DBA-4B48-BED7-D489DBFD1C53}.Release|x86.ActiveCfg = Release|Win32
+		{8BFE9E65-4DBA-4B48-BED7-D489DBFD1C53}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -68,6 +90,9 @@ Global
 		{63285EB3-BB00-45D3-89D3-0C21D2F04BD2} = {CF386CC3-4271-49F3-8F55-AA5759AB01F9}
 		{BC951F16-8126-4ACB-8BE0-89579FC6165F} = {63285EB3-BB00-45D3-89D3-0C21D2F04BD2}
 		{10D90F7F-0370-4D84-B342-EE34273240AB} = {63285EB3-BB00-45D3-89D3-0C21D2F04BD2}
+		{0AB4FB5A-F2A4-461D-B5C7-BB848C833207} = {CF386CC3-4271-49F3-8F55-AA5759AB01F9}
+		{0CD2CFD8-A5D5-4CE6-A5FC-515B79E0EFDF} = {0AB4FB5A-F2A4-461D-B5C7-BB848C833207}
+		{8BFE9E65-4DBA-4B48-BED7-D489DBFD1C53} = {0AB4FB5A-F2A4-461D-B5C7-BB848C833207}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {816E6C32-85EA-4EE5-A103-FB3D26DE6EDE}

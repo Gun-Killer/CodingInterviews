@@ -1,6 +1,7 @@
 #include <iostream>
 #include "MyFoo.h"
 #include <vector>
+#include "MyString.h"
 
 using namespace std;
 
@@ -66,5 +67,8 @@ int main()
     {
         std::cout << item;
     }
+
+
+
     return 0;
 }
