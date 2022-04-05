@@ -23,5 +23,5 @@ inline T LineInterpolation<T>::cal(const std::vector<T>& input, float proportion
     }
 
 
-    return input[0] * proportion + input[1] * (1.0f - proportion);
+    return input[0] * proportion + (input[1] - input[0]) * (1.0f - proportion);
 }
